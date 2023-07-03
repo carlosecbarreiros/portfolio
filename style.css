@@ -173,4 +173,84 @@ html {
     overflow-x: hidden;
   }
 
+@media screen and (max-width: 480px) {
+    .header-container {
+        height: 50vh;
+    }
+
+    img {
+        max-width: 150px;
+        margin-top: 20px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    section {
+        max-width: 250px;
+        padding: 5px;
+    }
+
+    .container-biography {
+        height: 50vh;
+        font-size: 20px;
+    }
+
+    #biography-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .biography-text {
+        font-size: 16px;
+        max-width: 400px;
+        padding: 0.5rem;
+    }
+
+    .container-projects {
+        height: auto;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    #projects-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .img2 {
+        max-width: 150px;
+        margin-top: 10px;
+    }
+
+    .card-text {
+        width: 70%;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+    }
+
+    .container-contacts {
+        height: auto;
+        font-size: 20px;
+    }
+
+    #contacts-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contacts-item,
+    .contacts-answer {
+        font-size: 16px;
+        margin-right: 5px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
   
