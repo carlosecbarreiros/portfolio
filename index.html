@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    // Função para rolagem suave ao clicar em um link com hash
+    function scrollToElement(elementId) {
+        const element = document.getElementById(elementId);
+        const elementHeight = element.offsetHeight;
+        const windowHeight = window.innerHeight;
+
+        const container = document.querySelector('.container');
+        const containerHeight = container.offsetHeight;
+
+        const offset = element.offsetTop - container.offsetTop;
+        const targetScrollPosition = offset - (windowHeight - elementHeight) / 2 + containerHeight / 2 - (elementHeight / 2) - 50;
+
+        window.scrollTo({
+            top: targetScrollPosition,
+            behavior: 'smooth'
+        });
+    }
+
+    // Adicione o manipulador de evento de clique para os links com hash
+    document.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
+            event.preventDefault();
+            const targetId = event.target.getAttribute('href').slice(1);
+            scrollToElement(targetId);
+        }
+    });
+</script>
+
+<body>
+    <header class="header-container">
+        <div>
+            <img id="Carlos-Barreiros" src="FotoMinhaProfissionalCortada.png" alt="Personal Picture">
+            <h1>Carlos Eduardo</h1>
+            <p>Computer Science Student</p>
+        </div>
+
+        <br>
+
+        <div>
+            <section>
+                <a href="#biography-title">About Me</a>
+            </section>
+
+            <br>
+
+            <section>
+                <a href="#projects-title">Projects</a>
+            </section>
+
+            <br>
+
+            <section>
+                <a href="#contacts-title">Contacts</a>
+            </section>
+
+
+        </div>
+
+    </header>
+    <main class="container">
+        <div class="container-biography">
+            <h2 id="biography-title">About Me </h2>
+            <div class="biography-text">
+                <p> Hello! My name is Carlos Eduardo Cardoso Barreiros. I am 17 years old and currently enrolled in the
+                    second semester of Computer Science at Anhembi Morumbi University. I completed my primary education
+                    in 2022 at Adventist College of Liberdade. I have always had a passion for computers and a natural
+                    aptitude for related subjects. Initially, I aspired to become a civil engineer due to my strong
+                    mathematical skills, but that field experienced a decline in the market. It was then that my father
+                    recommended this field to me, and in early 2022, I began delving into it, taking relevant courses
+                    and developing a strong affinity for the field. Presently, I have knowledge in Java, MySQL, UML,
+                    System Requirements, and some proficiency in HTML, CSS, and JS. I am also actively seeking to
+                    enhance my fluency in the English language and currently enrolled in an English course at CNA
+                    language school, where I am at an Advanced Level 1. Some of my skills include being focused,
+                    organized, a team player, having good interpersonal relationships, and possessing a strong aptitude
+                    for learning. </p>
+            </div>
+        </div>
+        <div class="container-projects">
+            <h3 id="projects-title">Projects</h3>
+            <div class="card-projects">
+                <div class="card">
+                    <img class="img2" src="zyro-image.png" alt="JavaBet">
+                    <div class="card-wrapper">
+                        <a class="link"
+                            href="https://drive.google.com/drive/u/2/folders/16gF2MLHcl4pN6H3WJf8WPX3nckL-we00?hl=pt-BR" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+                <div class="card-text">
+                    This was a college project in which an online gaming application was developed, featuring games such
+                    as blackjack and slot machines. The application includes user registration, login functionality, and
+                    a moderator screen with user control. Everything was developed in Java, including the database,
+                    where user information is stored in an array of objects.
+                </div>
+            </div>
+            <div class="card-projects">
+                <div class="card">
+                    <img class="img2" src="fotor_2023-7-2_18_48_48-fotor-20230702184917.png" alt="OneFootball">
+                    <div class="card-wrapper">
+                        <a class="link"
+                            href="https://drive.google.com/drive/u/2/folders/1DMyu0I93MwnDjSZRQRrCeUwkBaJFV2vQ?hl=pt-BR" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+                <div class="card-text">
+                    This was also a college project, but it was more theoretical in nature. It involved modeling an
+                    enhancement for the OneFootball application, specifically creating a community area within the app
+                    where users could interact with news content. The main focus of development for this project was UML
+                    (Unified Modeling Language) and Requirements Engineering.
+                </div>
+            </div>
+
+        </div>
+        <div class="container-contacts">
+            <h3 id="contacts-title">Contacts </h3>
+            <div>
+                <p class="contacts-item">Phone </p>
+                <p class="contacts-item">-</p>
+                <p class="contacts-answer">+551195039-4818</p>
+                <br>
+                <p class="contacts-item">Email </p>
+                <p class="contacts-item">-</p>
+                <p class="contacts-answer">cadu1117@hotmail.com</p>
+                <br>
+                <p class="contacts-item">Social Media </p>
+                <p class="contacts-item">-</p>
+                <a class="linkedin"
+                    href="https://www.linkedin.com/in/carlos-eduardo-cardoso-barreiros-b86741277/" target="_blank">Linkedin</a>
+                <br>
+                <p class="contacts-item">Address </p>
+                <p class="contacts-item">-</p>
+                <p class="contacts-answer">São Paulo, BRAZIL</p>
+
+            </div>
+        </div>
+
+    </main>
+    <hr>
+    <footer class="footer">
+        <p>Developed by <a href="#Carlos-Barreiros">Carlos Barreiros</a>. © 2023 All Rights Reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+    
