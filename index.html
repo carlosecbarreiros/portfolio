@@ -10,31 +10,31 @@
 
 <script>
     // Função para rolagem suave ao clicar em um link com hash
-function scrollToElement(elementId) {
-  const element = document.getElementById(elementId);
-  const elementHeight = element.offsetHeight;
-  const windowHeight = window.innerHeight;
+    function scrollToElement(elementId) {
+        const element = document.getElementById(elementId);
+        const elementHeight = element.offsetHeight;
+        const windowHeight = window.innerHeight;
 
-  const container = document.querySelector('.container');
-  const containerHeight = container.offsetHeight;
+        const container = document.querySelector('.container');
+        const containerHeight = container.offsetHeight;
 
-  const offset = element.offsetTop - container.offsetTop;
-  const targetScrollPosition = offset - (windowHeight - elementHeight) / 2 + containerHeight / 2 + (elementHeight / 2) + 50; // Ajuste o valor 50 para controlar a quantidade de rolagem
+        const offset = element.offsetTop - container.offsetTop;
+        const targetScrollPosition = offset - (windowHeight - elementHeight) / 2 + containerHeight / 2 + (elementHeight / 2) + 50; // Ajuste o valor 50 para controlar a quantidade de rolagem
 
-  window.scrollTo({
-    top: targetScrollPosition,
-    behavior: 'smooth'
-  });
-}
+        window.scrollTo({
+            top: targetScrollPosition,
+            behavior: 'smooth'
+        });
+    }
 
-// Adicione o manipulador de evento de clique para os links com hash
-document.addEventListener('click', function (event) {
-  if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
-    event.preventDefault();
-    const targetId = event.target.getAttribute('href').slice(1);
-    scrollToElement(targetId);
-  }
-});
+    // Adicione o manipulador de evento de clique para os links com hash
+    document.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
+            event.preventDefault();
+            const targetId = event.target.getAttribute('href').slice(1);
+            scrollToElement(targetId);
+        }
+    });
 </script>
 
 <body>
@@ -49,19 +49,19 @@ document.addEventListener('click', function (event) {
 
         <div>
             <section>
-                <a href="#biography-title">About Me</a>
+                <a class="a" href="#biography-title">About Me</a>
             </section>
 
             <br>
 
             <section>
-                <a href="#projects-title">Projects</a>
+                <a class="a" href="#projects-title">Projects</a>
             </section>
 
             <br>
 
             <section>
-                <a href="#contacts-title">Contacts</a>
+                <a class="a" href="#contacts-title">Contacts</a>
             </section>
 
 
@@ -92,8 +92,8 @@ document.addEventListener('click', function (event) {
                 <div class="card">
                     <img class="img2" src="zyro-image.png" alt="JavaBet">
                     <div class="card-wrapper">
-                        <a class="link"
-                            href="https://drive.google.com/drive/u/2/folders/16gF2MLHcl4pN6H3WJf8WPX3nckL-we00?hl=pt-BR" target="_blank">View
+                        <a href="https://drive.google.com/drive/u/2/folders/16gF2MLHcl4pN6H3WJf8WPX3nckL-we00?hl=pt-BR"
+                            target="_blank">View <br>
                             Project</a>
                     </div>
                 </div>
@@ -108,8 +108,8 @@ document.addEventListener('click', function (event) {
                 <div class="card">
                     <img class="img2" src="fotor_2023-7-2_18_48_48-fotor-20230702184917.png" alt="OneFootball">
                     <div class="card-wrapper">
-                        <a class="link"
-                            href="https://drive.google.com/drive/u/2/folders/1DMyu0I93MwnDjSZRQRrCeUwkBaJFV2vQ?hl=pt-BR" target="_blank">View
+                        <a href="https://drive.google.com/drive/u/2/folders/1DMyu0I93MwnDjSZRQRrCeUwkBaJFV2vQ?hl=pt-BR"
+                            target="_blank">View <br>
                             Project</a>
                     </div>
                 </div>
@@ -135,8 +135,8 @@ document.addEventListener('click', function (event) {
                 <br>
                 <p class="contacts-item">Social Media </p>
                 <p class="contacts-item">-</p>
-                <a class="linkedin"
-                    href="https://www.linkedin.com/in/carlos-eduardo-cardoso-barreiros-b86741277/" target="_blank">Linkedin</a>
+                <a class="linkedin" href="https://www.linkedin.com/in/carlos-eduardo-cardoso-barreiros-b86741277/"
+                    target="_blank">Linkedin</a>
                 <br>
                 <p class="contacts-item">Address </p>
                 <p class="contacts-item">-</p>
@@ -148,7 +148,8 @@ document.addEventListener('click', function (event) {
     </main>
     <hr>
     <footer class="footer">
-        <p>Developed by <a class="link-me" href="#Carlos-Barreiros">Carlos Barreiros</a>. © 2023 All Rights Reserved.</p>
+        <p>Developed by <a class="link-me" href="#Carlos-Barreiros">Carlos Barreiros</a>. © 2023 All Rights Reserved.
+        </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
