@@ -21,10 +21,26 @@ img {
     margin-top: 40px;
 }
 
-a {
+a.a {
     text-decoration: none;
     font-size: 20px;
     color: whitesmoke;
+}
+
+a {
+    font-size: 20px;
+    margin: 15px;
+    color: whitesmoke;
+}
+
+a.link-me{
+    font-size: 17;
+    margin: 0;
+    text-decoration: none;
+}
+
+a.linkedin{
+    margin: 0;
 }
 
 section {
@@ -64,7 +80,7 @@ section {
     padding: 0rem 1rem;
 }
 
-.container-projects{
+.container-projects {
     height: auto;
     padding-top: 20px;
     width: 99;
@@ -95,7 +111,7 @@ section {
     text-align: center;
 }
 
-.img2{
+.img2 {
     max-width: 200px;
     border-style: inset;
     border-color: #5865F2;
@@ -117,7 +133,7 @@ section {
     position: relative
 }
 
-.card-wrapper h2{
+.card-wrapper h2 {
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -125,9 +141,6 @@ section {
     transition: 0.5s ease-in-out;
 }
 
-.link {
-    margin: 20px;
-}
 
 .container-contacts {
     height: auto;
@@ -142,7 +155,7 @@ section {
     padding-bottom: 20px;
 }
 
-#contacts-title{
+#contacts-title {
     font-size: 40px;
     margin-bottom: 50px;
     text-align: center;
@@ -160,7 +173,7 @@ section {
     margin-right: 20px;
 }
 
-.footer{
+.footer {
     background-color: #5865F2;
     color: white;
     padding: 20px;
@@ -171,11 +184,11 @@ section {
 hr {
     margin: 0;
     padding: 0;
-  }
+}
 
 html {
     overflow-x: hidden;
-  }
+}
 
 @media screen and (max-width: 480px) {
     .header-container {
@@ -187,8 +200,17 @@ html {
         margin-top: 20px;
     }
 
-    a {
+    a.a {
         font-size: 16px;
+
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    a.link-me {
+        font-size: 12px;
     }
 
     section {
@@ -228,7 +250,7 @@ html {
     }
 
     .img2 {
-        max-width: 100px;
+        max-width: 80px;
         margin-top: 10px;
     }
 
@@ -262,7 +284,7 @@ html {
         padding: 10px;
     }
 
-    .link{
+    .link {
         font-size: 17;
     }
 }
