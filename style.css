@@ -271,5 +271,39 @@ hr {
 }
 
 @media screen and (max-width : 768px) {
+    #biography-title, #skills-title, 
+    #projects-title, #contacts-title {
+        font-size: 45px;
+    }
+    .biography-text {
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+    }
 
+    .container-skills .bar {
+        width: 320px;
+    }
+
+    .card-projects {
+        flex-direction: column;
+    }
+
+    .card-text {
+        margin-top: 15px;
+        width: 300px;
+    }
+
+    .container-contacts li img {
+        max-width: 35px;
+    }
+
+    .container-contacts h3 {
+        margin-left: 35px;
+        font-size: 17px;
+    }
+
+    .card img {
+        max-width: 130px;
+    }   
 }
