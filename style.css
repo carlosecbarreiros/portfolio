@@ -307,4 +307,10 @@ hr {
     .card img {
         max-width: 130px;
     }   
+
+    .container-biography, .container-skills,
+    .container-projects, .container-contacts {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
 }
