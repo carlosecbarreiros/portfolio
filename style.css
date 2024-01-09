@@ -292,6 +292,7 @@ hr {
     .card-text {
         margin-top: 15px;
         width: 300px;
+        text-align: center;
     }
 
     .container-contacts li img {
