@@ -1,5 +1,4 @@
-  // Função para rolagem suave ao clicar em um link com hash
-  function scrollToElement(elementId) {
+function scrollToElement(elementId) {
     const element = document.getElementById(elementId);
     const elementHeight = element.offsetHeight;
     const windowHeight = window.innerHeight;
@@ -16,7 +15,6 @@
     });
 }
 
-// Adicione o manipulador de evento de clique para os links com hash
 document.addEventListener('click', function (event) {
     if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
         event.preventDefault();
