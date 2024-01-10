@@ -4,8 +4,13 @@ function scrollToElement(elementId) {
     if (element) {
         const elementRect = element.getBoundingClientRect();
         const windowHeight = window.innerHeight;
-        const offset = elementRect.top + window.scrollY;
-        const targetScrollPosition = offset - (windowHeight - elementRect.height) / 2 + 200; // Ajuste aqui
+        let targetScrollPosition;
+
+        if (window.innerWidth <= 768) {
+            targetScrollPosition = elementRect.top + window.scrollY - (windowHeight - elementRect.height) / 2 + 250;
+        } else {
+            targetScrollPosition = elementRect.top + window.scrollY - (windowHeight - elementRect.height) / 2 + 200;
+        }
 
         window.scrollTo({
             top: targetScrollPosition,
