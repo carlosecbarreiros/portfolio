@@ -1,18 +1,17 @@
 function scrollToElement(elementId) {
     const element = document.getElementById(elementId);
-    const elementHeight = element.offsetHeight;
-    const windowHeight = window.innerHeight;
 
-    const container = document.querySelector('.container');
-    const containerHeight = container.offsetHeight;
+    if (element) {
+        const elementRect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const offset = elementRect.top + window.scrollY;
+        const targetScrollPosition = offset - (windowHeight - elementRect.height) / 2 + 200; // Ajuste aqui
 
-    const offset = element.offsetTop - container.offsetTop;
-    const targetScrollPosition = offset - (windowHeight - elementHeight) / 2 + containerHeight / 3 + (elementHeight / 30) + 170; 
-
-    window.scrollTo({
-        top: targetScrollPosition,
-        behavior: 'smooth'
-    });
+        window.scrollTo({
+            top: targetScrollPosition,
+            behavior: 'smooth'
+        });
+    }
 }
 
 document.addEventListener('click', function (event) {
