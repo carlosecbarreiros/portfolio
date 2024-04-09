@@ -31,7 +31,7 @@ nav {
     padding-top: 30px;
 }
 
-nav a {
+section span {
     text-decoration: none;
     color: inherit;
     font-size: 20px;
@@ -44,6 +44,7 @@ section {
     width: 300px;
     padding: 10px;
     margin: 10px;
+    cursor: pointer;
 }
 
 section:hover {
