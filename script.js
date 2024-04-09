@@ -1,3 +1,7 @@
+function scrollToClickedSection(targetId) {
+    scrollToElement(targetId.substring(1)); 
+}
+
 function scrollToElement(elementId) {
     const element = document.getElementById(elementId);
 
@@ -18,11 +22,3 @@ function scrollToElement(elementId) {
         });
     }
 }
-
-document.addEventListener('click', function (event) {
-    if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
-        event.preventDefault();
-        const targetId = event.target.getAttribute('href').slice(1);
-        scrollToElement(targetId);
-    }
-});
