@@ -1,0 +1,399 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: #F0ECE5;
+    font-family: Garamond;
+}
+
+.header-container {
+    height: auto;
+    text-align: center;
+    background-color: #161A30;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.header-container img {
+    max-width: 250px;
+    border: solid 3px #F0ECE5;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+section span {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    align-content: center;
+}
+
+section {
+    background-color: #31304D;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 2px  #0004;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+section:hover {
+    background-color: #B6BBC4;
+    color: black;
+}
+
+.container {
+    height: auto;
+}
+
+.container-biography {
+    background-color: #31304D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#biography-title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.biography-text {
+    width: 100%;
+    max-width: 600px;
+    border: solid 1px #F0ECE5 ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 1px  #F0ECE5;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.container-skills {
+    background-color: #161A30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+#skills-title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.container-skills ul {
+    font-size: 12px;
+    list-style-type: none;
+}
+
+.container-skills ul .level {
+    font-size: 10px;
+    float: right;
+}
+
+.container-skills ul li {
+    margin: 20px 0px;
+}
+
+.container-skills .bar {
+    background-color: #F0ECE5;
+    display: block;
+    height: 20px;
+    position: relative;
+    width: 500px;
+    border: solid 0.5px #F0ECE5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bar > span {
+    height: 20px;
+    background: linear-gradient(to right,#B6BBC4,#31304D);
+    position: absolute; 
+} 
+
+
+.basic {
+    width: 20%;
+}
+
+.intermediary {
+    width: 40%;
+}
+
+.advanced {
+    width: 60%;
+}
+
+.professional {
+    width: 80%;
+}
+
+.specialist {
+    width: 40%;
+}
+
+.container-projects {
+    background-color: #31304D;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 70px;
+}
+
+#projects-title {
+    font-size: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.card-projects {
+    margin: 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.card img {
+    max-width: 150px;
+    border: solid 2px #F0ECE5;
+    border-radius: 200px;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+}
+
+.card-wrapper a {
+    width: 95px;
+    margin: 15px 0px 5px;
+    color: inherit;
+    text-decoration: none;
+    border: solid 1px #F0ECE5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px  #F0ECE5;
+    padding: 5px;
+    
+}
+
+.card-wrapper a:hover {
+    background-color: #B6BBC4;
+    color: black;
+}
+
+.card-text {
+    width: 600px;
+    border: solid 1px #F0ECE5;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.container-contacts {
+    background-color: #161A30;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: absolute;
+}
+
+#contacts-title {
+    font-size: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.contacts-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contacts li img {
+    max-width: 40px;
+    background-color: #B6BBC4;
+    border: solid 2px #F0ECE5;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.container-contacts li {
+   display: flex;
+   align-items: center;
+   margin: 20px;
+}
+
+.container-contacts h3 {
+    margin-left: 40px;
+}
+
+.container-contacts a {
+    text-decoration: none;
+    color: #F0ECE5;
+}
+
+.container-contacts a:hover {
+    color: #B6BBC4;
+}
+
+.container-contacts form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+.container-contacts form textarea {
+    padding: 2px;
+    height: 100px;
+    min-height: 100px;
+    max-height: 300px;
+    max-width: 500px;
+    margin-bottom: 5px;
+}
+
+.container-contacts form input, form textarea {
+    width: 400px;
+    font: inherit;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2;
+}
+
+.container-contacts form label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.container-contacts form input:hover, form input:focus,
+form textarea:hover, form textarea:focus {
+    outline: none;
+    border-color: #B6BBC4;
+    box-shadow: 0 0 0 3px #F0ECE5;
+}
+
+.container-contacts form button {
+    display: block;
+    padding: 3px;
+    background: #B6BBC4;
+    color: #161A30;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container-contacts form button:hover, button:focus {
+    outline: none;
+    background: #F0ECE5;
+}
+
+.footer-container {
+    background-color: #161A30;
+    color: #F0ECE5;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+hr {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-container a {
+    color: #F0ECE5;
+}
+
+@media screen and (max-width: 1048px) {
+    .contacts-items {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-contacts form {
+        margin: 20px 0px 0px;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    #biography-title, #skills-title, 
+    #projects-title, #contacts-title {
+        font-size: 45px;
+    }
+    .biography-text {
+        width: 500px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container-skills .bar {
+        width: 320px;
+    }
+
+    .card-projects {
+        flex-direction: column;
+    }
+
+    .card-text {
+        margin-top: 35px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .card-text h4 {
+        text-align: left;
+    }
+
+    .container-contacts li img {
+        max-width: 35px;
+    }
+
+    .container-contacts h3 {
+        margin-left: 35px;
+        font-size: 17px;
+    }
+
+    .card img {
+        max-width: 130px;
+    }   
+
+    .container-biography, .container-skills,
+    .container-projects, .container-contacts,
+    .header-container {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .container-contacts form input, form textarea, form button {
+        width: 250px;
+    }
+}
+
+@media (max-width: 575px) {
+    .biography-text {
+        width: 350px;
+        padding: 15px;
+    }
+}

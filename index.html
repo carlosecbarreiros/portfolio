@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <div>
+            <img id="carlos-barreiros" src="imgs/personal_picture.png" alt="personal_picture">
+            <h1>Carlos Barreiros</h1>
+            <p>Computer Science Student</p>
+        </div>
+        <nav>
+            <section onclick="scrollToClickedSection('#biography-title')">
+                <span>About Me</span>
+            </section>
+            <section onclick="scrollToClickedSection('#skills-title')">
+                <span>Hard Skills</span>
+            </section>
+            <section onclick="scrollToClickedSection('#projects-title')">
+                <span>Projects</span>
+            </section>
+            <section onclick="scrollToClickedSection('#contacts-title')">
+                <span>Contacts</span>
+            </section>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="container-biography">
+            <h1 id="biography-title">About Me</h1>
+            <p class="biography-text">
+                Hi there! My name is Carlos Eduardo. I am nineteen years old and enrolled in the
+                fourth semester of Computer Science at Anhembi Morumbi University. I completed high school at Adventist
+                College of Liberdade in 2022. I've always had a passion for computers and a natural aptitude for related
+                subjects. <br> <br>
+                I was uncertain
+                about what I wanted to do for a long time. Soccer has always been a top priority for me since childhood.
+                I have experience in soccer clubs in Sao Paulo and have even played professionally in Germany. I spent
+                six
+                months competing in the regional tournament for Fv Rot-Weiß Weiler in Germany. I lived bymyself at the
+                team
+                apartment and improved my English skills because most people around me communicated in English. <br>
+                <br>
+                On the other hand, even though I had been playing soccer in 2022, I never dismissed the opportunity of
+                following an IT career; I always saw it with good eyes. I never put my studies aside; I always dedicated
+                and committed myself to the maximum possible regarding my studies and soccer professional life. It is
+                not for nothing that even when I lived in Germany, I conciliated my studies by transferring my tuition
+                to a Distance Learning course and keeping my skill courses in my free time. Nevertheless, in July 2024,
+                when I returned to Brazil, I concluded that I was willing to make a decision about my future and
+                dedicate
+                myself 100% to one thing only. I decided to build my career in thiscomputing world, which I have been
+                relating
+                very well to. <br> <br>
+                Nowadays, I am seeking my first professional experience in IT, where I intend to grow professionally,
+                learn a lot, and apply my knowledge such as Programming (back-end/front-end), Programming Libraries and
+                Frameworks (jQuery, VueJS, React, Angular, etc.), Relational Database (SQL), Non-Relational Database
+                (NoSQL), UML, System Requirements, Computer Networks, and Information Security. Some of my skills
+                include being
+                focused and organized, having good interpersonal relationships, teamwork, and a strong aptitude for
+                learning.
+                Even though my English skills are already advanced - I have studied for five years at CNA and practiced
+                my English
+                during my stay in Germany, I have been studying with a private teacher to refine my English even
+                further.
+            </p>
+        </div>
+        <div class="container-skills">
+            <h1 id="skills-title">Hard Skills</h1>
+            <ul>
+                <li>
+                    <h3>Java <span class="level">intermediary</span></h3>
+                    <span class="bar"><span class="intermediary"></span></span>
+                </li>
+                <li>
+                    <h3>JavaScript <span class="level">advanced</span></h3>
+                    <span class="bar"><span class="advanced"></span></span>
+                </li>
+                <li>
+                    <h3>HTML <span class="level">professional</span></h3>
+                    <span class="bar"><span class="professional"></span></span>
+                </li>
+                <li>
+                    <h3>CSS <span class="level">advanced</span></h3>
+                    <span class="bar"><span class="advanced"></span></span>
+                </li>
+                <li>
+                    <h3>Relational Database <span class="level">advanced</span></h3>
+                    <span class="bar"><span class="advanced"></span></span>
+                </li>
+                <li>
+                    <h3>Non-Relational Database <span class="level">intermediary</span></h3>
+                    <span class="bar"><span class="intermediary"></span></span>
+                </li>
+                <li>
+                    <h3>Computer Networks <span class="level">basic</span></h3>
+                    <span class="bar"><span class="basic"></span></span>
+                </li>
+                <li>
+                    <h3>Information Security <span class="level">basic</span></h3>
+                    <span class="bar"><span class="basic"></span></span>
+                </li>
+        </div>
+        <div class="container-projects">
+            <h1 id="projects-title">Projects</h1>
+            <div class="card-projects">
+                <div class="card">
+                    <img src="imgs/javebet_icon.png" alt="logo_javabet">
+                    <div class="card-wrapper">
+                        <h3>JavaBet Application</h3>
+                        <a href="https://github.com/carlosecbarreiros/java-bet"
+                            target="_blank">View Project</a>
+                    </div>
+
+                </div>
+                <div class="card-text">This was a college project in which an online gaming application was developed,
+                    featuring games such
+                    as blackjack and slot machines. The application includes user registration, login functionality, and
+                    a moderator screen with user control. Everything was developed in Java, including the database,
+                    where user information is stored in an array of objects.
+                    <br> <br>
+                    <h4>technologies used: Java</h4>
+                </div>
+            </div>
+            <div class="card-projects">
+                <div class="card">
+                    <img src="imgs/onefootball_icon.png" alt="logo_onefotball">
+                    <div class="card-wrapper">
+                        <h3>OneFootball Improvement</h3>
+                        <a href="https://github.com/carlosecbarreiros/onefootball-improvement"
+                            target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="card-text"> This was also a college project, but it was more theoretical in nature. It
+                    involved modeling an
+                    enhancement for the OneFootball application, specifically creating a community area with in the app
+                    where users could interact with news content. The main focus of development for this project was UML
+                    (Unified Modeling Language) and Requirements Engineering.
+                    <br> <br>
+                    <h4>technologies used: UML and Requirements Engineering</h4>
+                </div>
+            </div>
+        </div>
+        <div class="container-contacts">
+            <h1 id="contacts-title">Contacts</h1>
+            <div class="contacts-items">
+                <ul>
+                    <li>
+                        <img src="imgs/phone_icon.png" alt="phone">
+                        <h3>+55 11 95039-4818</h3>
+                    </li>
+                    <li>
+                        <img src="imgs/email_icon.png" alt="email">
+                        <a href="mailto:cadu1117@hotmai.com" target="_blank">
+                            <h3>cadu1117@hotmail.com</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="imgs/linkedin_icon.png" alt="social_media">
+                        <a href="https://www.linkedin.com/in/carlos-eduardo-cardoso-barreiros-b86741277/"
+                            target="_blank">
+                            <h3><strong>Carlos Eduardo Cardoso Barreiros</strong></h3>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="imgs/locate_icon.png" alt="address">
+                        <h3>São Paulo, BRAZIL</h3>
+                    </li>
+                </ul>
+                <form action="https://formsubmit.co/cadu1117@hotmail.com" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" placeholder="Leave a message..."></textarea>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <hr>
+    <footer class="footer-container">
+        <p>Developed by <a class="link-me" href="#carlos-barreiros">Carlos Barreiros</a>. © 2024 All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
