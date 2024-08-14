@@ -79,6 +79,18 @@ section:hover {
     box-shadow: 0px 0px 8px 1px  #F0ECE5;
     padding: 30px;
     margin-top: 20px;
+    /* animation: appear 3s linear; */
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
 }
 
 .container-skills {
@@ -92,59 +104,70 @@ section:hover {
 
 #skills-title {
     font-size: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
-.container-skills ul {
-    font-size: 12px;
-    list-style-type: none;
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
 }
 
-.container-skills ul .level {
-    font-size: 10px;
-    float: right;
+.skill-name {
+    font-size: 17px;
+    margin-bottom: 5px;
 }
 
-.container-skills ul li {
-    margin: 20px 0px;
-}
-
-.container-skills .bar {
-    background-color: #F0ECE5;
-    display: block;
+.skill-bar {
     height: 20px;
-    position: relative;
-    width: 500px;
+    background-color: #d3d3d3;
     border: solid 0.5px #F0ECE5;
     border-radius: 20px;
-    overflow: hidden;
 }
 
-.bar > span {
-    height: 20px;
-    background: linear-gradient(to right,#B6BBC4,#31304D);
-    position: absolute; 
-} 
-
-
-.basic {
-    width: 20%;
+.skill-per {
+    height: 18px;
+    background: linear-gradient(to right, #B6BBC4, #31304D);
+    position: relative;
+    border-radius: 20px;
+    width: 0;
+    opacity: 0;
 }
 
-.intermediary {
-    width: 40%;
+.skill-per::before {
+    content: attr(level);
+    position: absolute;
+    padding: 4px 6px;
+    background: #F0ECE5;
+    border-radius: 4px;
+    font-size: 12px;
+    color: black;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
 }
 
-.advanced {
-    width: 60%;
+.skill-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #F0ECE5;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
 }
 
-.professional {
-    width: 80%;
+.skill-per.animate {
+    animation: progress 3s forwards;
 }
 
-.specialist {
-    width: 40%;
+@keyframes progress {
+    to {
+        width: var(--per);
+        opacity: 1;
+    }
 }
 
 .container-projects {
@@ -348,10 +371,6 @@ hr {
         text-align: center;
     }
 
-    .container-skills .bar {
-        width: 320px;
-    }
-
     .card-projects {
         flex-direction: column;
     }
@@ -391,9 +410,35 @@ hr {
     }
 }
 
+@media (max-width: 630px) {
+    .skill-name {
+        font-size: 13px;
+    }
+
+    .skill-per::before {
+        font-size: 10px;
+        top: -38px;
+    }
+
+    .skill-per::after {
+        top: -23px;
+    }
+}
+
 @media (max-width: 575px) {
     .biography-text {
         width: 350px;
         padding: 15px;
+    }
+}
+
+@media (max-width: 410px) {
+    .skill-per::before {
+        font-size: 10px;
+        top: -42px;
+    }
+
+    .skill-per::after {
+        top: -27px;
     }
 }
