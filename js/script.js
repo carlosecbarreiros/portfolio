@@ -1,5 +1,22 @@
+document.addEventListener("DOMContentLoaded", function() {
+    let observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let skillPer = entry.target.querySelector('.skill-per');
+                skillPer.style.setProperty('--per', skillPer.getAttribute('per'));
+                skillPer.classList.add('animate');
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, { threshold: 0.5 }); 
+
+    document.querySelectorAll('.skills').forEach(skill => {
+        observer.observe(skill);
+    });
+});
+
 function scrollToClickedSection(targetId) {
-    scrollToElement(targetId.substring(1)); 
+    scrollToElement(targetId.substring(1));
 }
 
 function scrollToElement(elementId) {
