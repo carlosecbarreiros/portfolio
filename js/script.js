@@ -39,3 +39,32 @@ function scrollToElement(elementId) {
         });
     }
 }
+
+function showProject(event) {
+    let target = event.target.getAttribute('data-target'); 
+    let mediaProjects = document.querySelector(`.media-projects[data-content="${target}"]`); 
+
+    if (mediaProjects) {
+        mediaProjects.style.display = 'flex'; 
+    }
+
+    event.target.classList.add('btn-active'); 
+}
+
+function closeProject() {
+    let activeMedia = document.querySelector('.media-projects[style*="flex"]'); 
+    let activeButton = document.querySelector('.btn-active'); 
+
+    if (activeMedia) {
+        activeMedia.style.display = 'none'; 
+    }
+
+    if (activeButton) {
+        activeButton.classList.remove('btn-active'); 
+    }
+}
+
+document.querySelectorAll('.btn-viewProject').forEach(btn => {
+    btn.addEventListener('click', showProject);
+});
+
