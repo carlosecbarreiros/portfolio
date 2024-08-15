@@ -227,7 +227,7 @@ section:hover {
 
 .card-wrapper button:hover {
     background-color: #B6BBC4;
-    color: black;
+    color: white;
 }
 
 
@@ -276,7 +276,7 @@ section:hover {
     text-align: center;
 }
 
-.media-projects a:hover {
+.media-description a:hover {
     background-color: #B6BBC4;
     color: black;
 }
@@ -294,7 +294,7 @@ section:hover {
 
 .media-description button:hover {
     background-color: #B6BBC4;
-    color: black;
+    color: white;
 }
 
 
