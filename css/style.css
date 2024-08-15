@@ -285,6 +285,7 @@ section:hover {
     height: 28px;
     padding: 5px;
     border: solid 1px #F0ECE5;
+    color: black;
     cursor: pointer;
     margin-left: 20px;
     align-self: center;
