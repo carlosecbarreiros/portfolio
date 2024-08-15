@@ -208,22 +208,25 @@ section:hover {
     margin: 0px 20px;
 }
 
-.card-wrapper a {
-    width: 95px;
-    margin: 15px 0px 5px;
-    color: inherit;
-    text-decoration: none;
-    border: solid 1px #F0ECE5;
+.card-wrapper button {
+    width: 120px;
+    padding: 3px;
+    margin-top: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 2px 1px  #F0ECE5;
-    padding: 5px;
-    
+    border: solid 1px #F0ECE5;
+    cursor: pointer;
 }
 
-.card-wrapper a:hover {
+.btn-active {
+    background-color: #B6BBC4 !important;
+    cursor: default !important;
+}
+
+.card-wrapper button:hover {
     background-color: #B6BBC4;
     color: black;
 }
+
 
 .card-text {
     width: 600px;
@@ -231,6 +234,65 @@ section:hover {
     border-radius: 12px;
     padding: 20px;
 }
+
+.media-projects {
+    display: none;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.media-projects video {
+    border: solid 1px #F0ECE5;
+    box-shadow: 0px 0px 2px 1px  #F0ECE5;
+    width: 700px
+}
+
+.media-projects img {
+    border: solid 1px #F0ECE5;
+    box-shadow: 0px 0px 2px 1px  #F0ECE5;
+    width: 700px;
+}
+
+.media-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.media-description a {
+    width: 200px;
+    color: inherit;
+    text-decoration: none;
+    border: solid 1px #F0ECE5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px  #F0ECE5;
+    padding: 5px;
+    align-self: center;
+    text-align: center;
+}
+
+.media-projects a:hover {
+    background-color: #B6BBC4;
+    color: black;
+}
+
+.media-description button {
+    height: 28px;
+    padding: 5px;
+    border: solid 1px #F0ECE5;
+    cursor: pointer;
+    margin-left: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.media-description button:hover {
+    background-color: #B6BBC4;
+    color: black;
+}
+
 
 .container-contacts {
     background-color: #161A30;
@@ -385,6 +447,18 @@ hr {
         text-align: left;
     }
 
+    .media-projects {
+        margin-top: 5px;
+    }
+
+    .media-projects video {
+        width: 500px
+    }
+    
+    .media-projects img {
+        width: 500px;
+    }
+
     .container-contacts li img {
         max-width: 35px;
     }
@@ -430,6 +504,14 @@ hr {
         width: 350px;
         padding: 15px;
     }
+
+    .media-projects video {
+        width: 350px
+    }
+    
+    .media-projects img {
+        width: 350px;
+    }
 }
 
 @media (max-width: 410px) {
@@ -441,4 +523,13 @@ hr {
     .skill-per::after {
         top: -27px;
     }
+
+    .media-projects video {
+        width: 290px
+    }
+    
+    .media-projects img {
+        width: 290px;
+    }
+
 }
