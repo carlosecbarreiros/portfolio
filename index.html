@@ -133,10 +133,8 @@
                     <img src="imgs/javebet_icon.png" alt="logo_javabet">
                     <div class="card-wrapper">
                         <h3>JavaBet Application</h3>
-                        <a href="https://github.com/carlosecbarreiros/java-bet"
-                            target="_blank">View Project</a>
+                        <button class="btn-viewProject" data-target="javabet">View project ↓</button>
                     </div>
-
                 </div>
                 <div class="card-text">This was a college project in which an online gaming application was developed,
                     featuring games such
@@ -147,13 +145,19 @@
                     <h4>technologies used: Java</h4>
                 </div>
             </div>
+            <div class="media-projects" data-content="javabet">
+                <video src="videos/Demonstração simples JavaBet.mp4" type="video/mp4" controls></video>
+                <div class="media-description">
+                    <a href="https://github.com/carlosecbarreiros/java-bet" target="_blank">Repository</a>
+                    <button onclick="closeProject()">Close</button>
+                </div>
+            </div>
             <div class="card-projects">
                 <div class="card">
                     <img src="imgs/onefootball_icon.png" alt="logo_onefotball">
                     <div class="card-wrapper">
                         <h3>OneFootball Improvement</h3>
-                        <a href="https://github.com/carlosecbarreiros/onefootball-improvement"
-                            target="_blank">View Project</a>
+                        <button class="btn-viewProject" data-target="onefootball">View project ↓</button>
                     </div>
                 </div>
                 <div class="card-text"> This was also a college project, but it was more theoretical in nature. It
@@ -163,6 +167,14 @@
                     (Unified Modeling Language) and Requirements Engineering.
                     <br> <br>
                     <h4>technologies used: UML and Requirements Engineering</h4>
+                </div>
+            </div>
+            <div class="media-projects" data-content="onefootball">
+                <img src="imgs/onefootball_interface.png" alt="onefootball_interface">
+                <div class="media-description">
+                    <a href="https://drive.google.com/drive/folders/1f6-OQUp1n3TKTZtGLwhlH8JDcHL2RMZm?hl=pt-BR"
+                        target="_blank">Documentation</a>
+                    <button onclick="closeProject()">Close</button>
                 </div>
             </div>
         </div>
@@ -208,7 +220,8 @@
     </main>
     <hr>
     <footer class="footer-container">
-        <p>Developed by <a class="link-me" href="#carlos-barreiros">Carlos Barreiros</a>. © 2024 All Rights Reserved.
+        <p>Developed by <a class="link-me" href="#carlos-barreiros" target="_blank">Carlos Barreiros</a>. © 2024 All
+            Rights Reserved.
         </p>
     </footer>
 
