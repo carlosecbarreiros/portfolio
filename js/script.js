@@ -30,7 +30,7 @@ function scrollToElement(elementId) {
         if (window.innerWidth <= 768) {
             targetScrollPosition = elementRect.top + window.scrollY - (windowHeight - elementRect.height) / 2 + 250;
         } else {
-            targetScrollPosition = elementRect.top + window.scrollY - (windowHeight - elementRect.height) / 2 + 300;
+            targetScrollPosition = elementRect.top + window.scrollY - (windowHeight - elementRect.height) / 2 + 350;
         }
 
         window.scrollTo({
