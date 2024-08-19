@@ -23,18 +23,11 @@ function scrollToElement(elementId) {
     const element = document.getElementById(elementId);
 
     if (element) {
-        const elementRect = element.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        let targetScrollPosition;
-
-        if (window.innerWidth <= 768) {
-            targetScrollPosition = elementRect.top + window.scrollY - (windowHeight - elementRect.height) / 2 + 250;
-        } else {
-            targetScrollPosition = elementRect.top + window.scrollY - (windowHeight - elementRect.height) / 2 + 350;
-        }
+        const offset = 50; 
+        const elementTop = element.getBoundingClientRect().top + window.scrollY - offset;
 
         window.scrollTo({
-            top: targetScrollPosition,
+            top: elementTop,
             behavior: 'smooth'
         });
     }
