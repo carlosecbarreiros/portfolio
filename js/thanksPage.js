@@ -3,7 +3,7 @@ function getSelectedLanguage() {
 }
 
 async function loadTranslations(language) {
-    const response = await fetch(`../${language}.json`);
+    const response = await fetch(`locales/${language}.json`);
     return await response.json();
 }
 
