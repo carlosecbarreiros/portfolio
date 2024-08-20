@@ -82,8 +82,8 @@ const brFlag = document.getElementById('br-flag');
 const usFlag = document.getElementById('us-flag');
 
 const translations = {
-    en: 'en.json',
-    br: 'br.json'
+    en: 'locales/en.json',
+    br: 'locales/br.json'
 };
 
 function loadLanguage(language) {
