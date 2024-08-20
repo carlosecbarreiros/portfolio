@@ -1,9 +1,9 @@
 function getSelectedLanguage() {
-    return localStorage.getItem('selectedLanguage') || 'pt'; // 'pt' como padrão
+    return localStorage.getItem('selectedLanguage') || 'pt'; 
 }
 
 async function loadTranslations(language) {
-    const response = await fetch(`locales/${language}.json`);
+    const response = await fetch(`../${language}.json`);
     return await response.json();
 }
 
