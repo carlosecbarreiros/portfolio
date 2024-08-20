@@ -9,176 +9,182 @@
 </head>
 
 <body>
-    <header class="header-container">
-        <div>
-            <img id="carlos-barreiros" src="imgs/personal_picture.png" alt="personal_picture">
+    <header id="carlos-barreiros" class="header-container">
+        <div class="languages">
+            <img id="br-flag" src="imgs/brazil-flag.png" alt="br-flag">
+            <img id="us-flag" src="imgs/usa-flag.png" alt="us-flag">
+        </div>
+        <div class="carlos-barreiros">
+            <img src="imgs/personal_picture.png" alt="personal_picture">
             <h1>Carlos Barreiros</h1>
-            <p>Computer Science Student</p>
+            <p id="occupation">Estudante de Ciência da Computação</p>
         </div>
         <nav>
             <section onclick="scrollToClickedSection('#biography-title')">
-                <span>About Me</span>
+                <span id="aboutMe-button">Sobre mim</span>
             </section>
             <section onclick="scrollToClickedSection('#skills-title')">
-                <span>Hard Skills</span>
+                <span id="hardSkills-button">Habilidades técnicas</span>
             </section>
             <section onclick="scrollToClickedSection('#projects-title')">
-                <span>Projects</span>
+                <span id="projects-button">Projetos</span>
             </section>
             <section onclick="scrollToClickedSection('#contacts-title')">
-                <span>Contacts</span>
+                <span id="contacts-button">Contatos</span>
             </section>
         </nav>
     </header>
     <main class="container">
         <div class="container-biography">
-            <h1 id="biography-title">About Me</h1>
-            <p class="biography-text">
-                Hi there! My name is Carlos Eduardo. I am nineteen years old and enrolled in the
-                fourth semester of Computer Science at Anhembi Morumbi University. I completed high school at Adventist
-                College of Liberdade in 2022. I've always had a passion for computers and a natural aptitude for related
-                subjects. <br> <br>
-                I was uncertain
-                about what I wanted to do for a long time. Soccer has always been a top priority for me since childhood.
-                I have experience in soccer clubs in Sao Paulo and have even played professionally in Germany. I spent
-                six
-                months competing in the regional tournament for Fv Rot-Weiß Weiler in Germany. I lived bymyself at the
-                team
-                apartment and improved my English skills because most people around me communicated in English. <br>
+            <h1 id="biography-title">Sobre mim</h1>
+            <p id="biography-text" class="biography-text">
+                Ola! Meu nome é Carlos Eduardo Cardoso Barreiros. Tenho 19 anos e atualmente estou cursando o quarto
+                semestre de Ciência da Computação
+                na Universidade Anhembi Morumbi. Eu completei minha educação primária em 2022 no Colégio Adventista da
+                Liberdade. Eu sempre tive
+                paixão por computadores e uma aptidão natural para assuntos relacionados. <br>
                 <br>
-                On the other hand, even though I had been playing soccer in 2022, I never dismissed the opportunity of
-                following an IT career; I always saw it with good eyes. I never put my studies aside; I always dedicated
-                and committed myself to the maximum possible regarding my studies and soccer professional life. It is
-                not for nothing that even when I lived in Germany, I conciliated my studies by transferring my tuition
-                to a Distance Learning course and keeping my skill courses in my free time. Nevertheless, in July 2024,
-                when I returned to Brazil, I concluded that I was willing to make a decision about my future and
-                dedicate
-                myself 100% to one thing only. I decided to build my career in this computing world, which I have been
-                relating
-                very well to. <br> <br>
-                Nowadays, I am seeking my first professional experience in IT, where I intend to grow professionally,
-                learn a lot, and apply my knowledge such as Programming (back-end/front-end), Programming Libraries and
-                Frameworks (jQuery, VueJS, React, Angular, etc.), Relational Database (SQL), Non-Relational Database
-                (NoSQL), UML, System Requirements, Computer Networks, and Information Security. Some of my skills
-                include being
-                focused and organized, having good interpersonal relationships, teamwork, and a strong aptitude for
-                learning.
-                Even though my English skills are already advanced - I have studied for five years at CNA and practiced
-                my English
-                during my stay in Germany, I have been studying with a private teacher to refine my English even
-                further.
+                Fiquei muito tempo sem saber o que queria fazer. O futebol sempre foi uma prioridade para mim desde a
+                infância. Tenho experiência em clubes de futebol de São Paulo e até joguei profissionalmente na
+                Alemanha, onde passei seis meses competindo no torneio regional do Fv Rot-Weiß Weiler. Nesse período lá
+                eu morava sozinho no apartamento do clube e consequentemente melhorei meu inglês, pelo fato de que a
+                maioria das pessoas ao meu redor se comunicavam em inglês. <br>
+                <br>
+                Por outro lado, mesmo que eu estivesse jogando futebol em 2022, não descartei a oportunidade de seguir
+                carreira em TI, sempre vi com bons olhos. Nunca deixei os estudos de lado, sempre me dediquei e me
+                compromenti em relação aos meus estudos e vida profissional no futebol. Não é à toa que mesmo na
+                Alemanha conciliei os estudos transferindo minha matrícula para EAD e mantendo meus cursos extra
+                curriculares nas horas vagas. Porém, em julho de 2024, quando retornei ao Brasil, concluí que estava
+                disposto a tomar uma decisão sobre meu futuro e me dedicar 100% a uma só coisa. Resolvi construir minha
+                carreira nesse mundo da tecnologia, com qual tenho me relacionado muito bem. <br>
+                <br>
+                Atualmente busco minha primeira experiência profissional em TI, onde pretendo crescer profissionalmente,
+                aprender muito e aplicar meus conhecimentos, como:
+                Programação (back-end/front-end), Bibliotecas e Frameworks de Programação (jQuery, VueJS, React,
+                Angular...), Banco de Dados Relacional (SQL),
+                Banco de Dados Não-Relacional (NoSQL), UML, Requisitos de Sistema, Redes de Computadores ou Segurança da
+                Informação. Algumas de minha habilidades incluem foco e organização, bom relacionamento interpessoal,
+                trabalho em equipe e forte potência para aprendizagem. Embora meu inglês já esteja avançado, estudei por
+                cinco anos no CNA e pratiquei durante minha estrada na Alememanha, tenho estudado com um professor
+                particular para aprimorar ainda mais meu inglês.
             </p>
         </div>
         <div class="container-skills">
-            <h1 id="skills-title">Hard Skills</h1>
+            <h1 id="skills-title">Habilidades técnicas</h1>
             <div class="skills">
                 <div class="skill-name">Java</div>
                 <div class="skill-bar">
-                    <div class="skill-per" level="intermediary" per="40%" style="max-width: 40%;"></div>
+                    <div id="java-bar" class="skill-per" level="intermediário" per="40%" style="max-width: 40%;"></div>
                 </div>
             </div>
             <div class="skills">
                 <div class="skill-name">JavaScript</div>
                 <div class="skill-bar">
-                    <div class="skill-per" level="advanced" per="60%" style="max-width: 60%;"></div>
+                    <div id="js-bar" class="skill-per" level="avançado" per="60%" style="max-width: 60%;"></div>
                 </div>
             </div>
             <div class="skills">
                 <div class="skill-name">HTML</div>
                 <div class="skill-bar">
-                    <div class="skill-per" level="professional" per="80%" style="max-width: 80%;"></div>
+                    <div id="html-bar" class="skill-per" level="profissional" per="80%" style="max-width: 80%;"></div>
                 </div>
             </div>
             <div class="skills">
                 <div class="skill-name">CSS</div>
                 <div class="skill-bar">
-                    <div class="skill-per" level="advanced" per="60%" style="max-width: 60%;"></div>
+                    <div id="css-bar" class="skill-per" level="avançado" per="60%" style="max-width: 60%;"></div>
                 </div>
             </div>
             <div class="skills">
                 <div class="skill-name">SQL</div>
                 <div class="skill-bar">
-                    <div class="skill-per" level="advanced" per="60%" style="max-width: 60%;"></div>
+                    <div id="sql-bar" class="skill-per" level="avançado" per="60%" style="max-width: 60%;"></div>
                 </div>
             </div>
             <div class="skills">
                 <div class="skill-name">NoSQL</div>
                 <div class="skill-bar">
-                    <div class="skill-per" level="intermediary" per="40%" style="max-width: 40%;"></div>
+                    <div id="nosql-bar" class="skill-per" level="intermediário" per="40%" style="max-width: 40%;"></div>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill-name">Computer Networks</div>
+                <div id="computerNetworks-skill" class="skill-name">Redes de Computadores</div>
                 <div class="skill-bar">
-                    <div class="skill-per" level="intermediary" per="40%" style="max-width: 40%;"></div>
+                    <div id="cn-bar" class="skill-per" level="intermediário" per="40%" style="max-width: 40%;"></div>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill-name">Cybersecurity</div>
+                <div id="cybersecurity-skill" class="skill-name">Cibersegurança</div>
                 <div class="skill-bar">
-                    <div class="skill-per" level="basic" per="20%" style="max-width: 20%;"></div>
+                    <div id="cyber-bar"class="skill-per" level="básico" per="20%" style="max-width: 20%;"></div>
                 </div>
             </div>
             <div class="skills">
-                <div class="skill-name">UML and Requirements Engineering</div>
+                <div id="uml-skill" class="skill-name">UML e Engenharia de Requisitos</div>
                 <div class="skill-bar">
-                    <div class="skill-per" level="advanced" per="60%" style="max-width: 60%;"></div>
+                    <div id="uml-bar" class="skill-per" level="avançado" per="60%" style="max-width: 60%;"></div>
                 </div>
             </div>
         </div>
         <div class="container-projects">
-            <h1 id="projects-title">Projects</h1>
+            <h1 id="projects-title">Projetos</h1>
             <div class="card-projects">
                 <div class="card">
                     <img src="imgs/javebet_icon.png" alt="logo_javabet">
                     <div class="card-wrapper">
-                        <h3>JavaBet Application</h3>
-                        <button class="btn-viewProject" data-target="javabet">View project ↓</button>
+                        <h3 id="javaBet-title">Aplicação JavaBet</h3>
+                        <button id="javaBet-button" class="btn-viewProject" data-target="javabet">ver projeto ↓</button>
                     </div>
                 </div>
-                <div class="card-text">This was a college project in which an online gaming application was developed,
-                    with games such as blackjack and slot machines. The app includes user registration, login
-                    functionality and a moderator screen with user control. Everything was developed in Java, including
-                    the database, where user information is stored in an array of objects. The challenges were to test
-                    the student's mastery of logic and object-oriented programming.
+                <div id="javaBet-text" class="card-text">Este é um projeto de faculdade, em que foi desenvolvido um
+                    aplicativo de jogos
+                    online, com jogos como blackjack e caça-níquel. O aplicativo inclui registro de
+                    usuário, funcionalidade de login e uma tela de moderador com controle de usuário. Tudo foi
+                    desenvolvido em Java, inclusive o banco de dados, onde as informações são armazenadas em array de
+                    objetos, no qual os desafios eram testar o domínio do aluno com lógica e programação orientada a
+                    objetos.
                     <br> <br>
-                    <h4>technologies used: Java</h4>
+                    <h4>tecnologias usadas: UML e Engenharia de Requisitos</h4>
                 </div>
             </div>
             <div class="media-projects" data-content="javabet">
                 <video src="videos/Demonstração simples JavaBet.mp4" type="video/mp4" controls></video>
                 <div class="media-description">
-                    <a href="https://github.com/carlosecbarreiros/java-bet" target="_blank">Repository</a>
-                    <button onclick="closeProject()">Close</button>
+                    <a id="javaBet-repository" href="https://github.com/carlosecbarreiros/java-bet"
+                        target="_blank">Repositório</a>
+                    <button id="javaBet-close" data-target="javabet" onclick="closeProject(event)"</button>
                 </div>
             </div>
             <div class="card-projects">
                 <div class="card">
                     <img src="imgs/onefootball_icon.png" alt="logo_onefotball">
                     <div class="card-wrapper">
-                        <h3>OneFootball Improvement</h3>
-                        <button class="btn-viewProject" data-target="onefootball">View project ↓</button>
+                        <h3 id="onefootball-title">Melhoria para OneFootball</h3>
+                        <button id="onefootball-button" class="btn-viewProject" data-target="onefootball">ver projeto
+                            ↓</button>
                     </div>
                 </div>
-                <div class="card-text"> This was also a college project, but more theoretical in nature. It involved
-                    modeling an improvement to the OneFootball app, specifically creating a community area in the app
-                    where users could interact with news content. The main focus of development of this project was UML
-                    (Unified Modeling Language), for the diagrams and Requirements Engineering, for the implementations.
+                <div id="onefootball-text" class="card-text"> Este também é um projeto de faculdade, mas de natureza
+                    mais teórica. Envolveu a modelagem de uma melhoria para o aplicativo OneFootball, especificamente a
+                    criação de uma área de comunidade no aplicativo onde os usuários pudessem interagir com o conteúdo
+                    de notícias. O foco principal de desenvolvimento desde projeto foi UML (Unified Modeling Language),
+                    para os diagramas e Engenharia de requisitos, para as implementações.
                     <br> <br>
-                    <h4>technologies used: UML and Requirements Engineering</h4>
+                    <h4>tecnologias usadas: UML and Engenharia de Requisitos</h4>
                 </div>
             </div>
             <div class="media-projects" data-content="onefootball">
                 <img src="imgs/onefootball_interface.png" alt="onefootball_interface">
                 <div class="media-description">
-                    <a href="https://drive.google.com/drive/folders/1f6-OQUp1n3TKTZtGLwhlH8JDcHL2RMZm?hl=pt-BR"
-                        target="_blank">Documentation</a>
-                    <button onclick="closeProject()">Close</button>
+                    <a id="onefootball-documentation"
+                        href="https://drive.google.com/drive/folders/1f6-OQUp1n3TKTZtGLwhlH8JDcHL2RMZm?hl=pt-BR"
+                        target="_blank">Documentação</a>
+                    <button id="onefootball-close" data-target="onefootball" onclick="closeProject(event)">Fechar</button>
                 </div>
             </div>
         </div>
         <div class="container-contacts">
-            <h1 id="contacts-title">Contacts</h1>
+            <h1 id="contacts-title">Contatos</h1>
             <div class="contacts-items">
                 <ul>
                     <li>
@@ -200,18 +206,18 @@
                     </li>
                     <li>
                         <img src="imgs/locate_icon.png" alt="address">
-                        <h3>São Paulo, BRAZIL</h3>
+                        <h3 id="contacts-location">São Paulo, BRASIL</h3>
                     </li>
                 </ul>
                 <form action="https://formsubmit.co/cadu1117@hotmail.com" method="POST">
-                    <label for="name">Name</label>
+                    <label id="form-name" for="name">Nome</label>
                     <input type="text" name="name" required>
                     <label for="email">E-Mail</label>
                     <input type="email" name="email" required>
-                    <label for="message">Message</label>
-                    <textarea name="message" placeholder="Leave a message..."></textarea>
-                    <input type="hidden" name="_next" value="https://carlosecbarreiros.github.io/portfolio/thanks.html">
-                    <button type="submit">Send</button>
+                    <label id="form-message" for="message">Mensagem</label>
+                    <textarea id="form-msgSpace" name="message" placeholder="Deixe uma mensagem..."></textarea>
+                    <input type="hidden" name="_next" value="https://carlosecbarreiros.github.io/portfolio/thanksPage.html">
+                    <button id="form-button" type="submit">Enviar</button>
                 </form>
             </div>
 
@@ -219,8 +225,8 @@
     </main>
     <hr>
     <footer class="footer-container">
-        <p>Developed by <a class="link-me" href="#carlos-barreiros">Carlos Barreiros</a>. © 2024 All
-            Rights Reserved.
+        <p id="footer-message">Desenvolvido por <a class="link-me" onclick="scrollToMe(); return false;">Carlos Barreiros</a>. © 2024 Todos
+            Direitos Reservados.
         </p>
     </footer>
 
