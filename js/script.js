@@ -132,6 +132,8 @@ function loadLanguage(language) {
 }
 
 function selectFlag(flag) {
+    localStorage.setItem('selectedLanguage', flag === 'br' ? 'pt' : 'en');
+
     if (flag === 'br') {
         brFlag.classList.add('flag-selected');
         usFlag.classList.remove('flag-selected');
@@ -146,5 +148,6 @@ function selectFlag(flag) {
 brFlag.addEventListener('click', () => selectFlag('br'));
 usFlag.addEventListener('click', () => selectFlag('us'));
 
-selectFlag('br');
+const savedLanguage = localStorage.getItem('selectedLanguage') || 'pt';
+selectFlag(savedLanguage === 'pt' ? 'br' : 'us');
 
