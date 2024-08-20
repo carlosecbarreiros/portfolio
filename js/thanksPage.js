@@ -8,11 +8,8 @@ async function loadTranslations(language) {
 }
 
 function applyTranslations(translations) {
-    if (document.getElementById('thanks-heading')) {
-        document.getElementById('thanks-heading').innerText = translations['thanks-heading'];
-        document.getElementById('thanks-message').innerText = translations['thanks-message'];
-        document.getElementById('page-title').innerText = translations['page-title'];
-    }
+    document.getElementById('thanks-heading').innerText = translations['thanks-heading'];
+    document.getElementById('thanks-message').innerText = translations['thanks-message'];
 }
 
 async function initializeTranslation() {
