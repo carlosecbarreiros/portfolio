@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.5
+        threshold: 0.3
     });
 
     const targets = document.querySelectorAll('.biography-text');
