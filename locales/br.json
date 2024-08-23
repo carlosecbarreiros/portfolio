@@ -37,7 +37,7 @@
     "form-message": "Mensagem",
     "form-msgSpace-placeholder": "Deixe uma menssagem...",
     "form-button": "ENVIAR",
-    "footer-message": "Desenvolvido por <a class='link-me' onclick='scrollToMe(); return false;'>Carlos Barreiros</a>. © 2024 TodosDireitos Reservados.",
+    "footer-message": "Desenvolvido por <a class='link-me' onclick='scrollToMe(); return false;'>Carlos Barreiros</a>. © 2024 Todos Direitos Reservados.",
     "thanks-heading": "Obrigado pelo contato!",
     "thanks-message": "Retornarei para você em breve :)"
 }
