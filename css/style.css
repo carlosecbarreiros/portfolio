@@ -8,6 +8,7 @@
 body {
     color: #F0ECE5;
     font-family: Garamond;
+    overflow-x: hidden;
 }
 
 .header-container {
