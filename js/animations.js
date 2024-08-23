@@ -8,15 +8,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.8
+        threshold: 1
     });
 
     const title = document.querySelector('#biography-title');
     observer.observe(title);
 });
 
-// biography-text animation 
 document.addEventListener('DOMContentLoaded', () => {
+    function getThreshold() {
+        return window.innerWidth <= 768 ? 0.1 : 0.3; 
+    }
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -25,11 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.3
+        threshold: getThreshold()
     });
 
     const targets = document.querySelectorAll('.biography-text');
     targets.forEach(target => observer.observe(target));
+
+    
+    window.addEventListener('resize', () => {
+        observer.disconnect(); 
+        const newThreshold = getThreshold();
+        const newObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    newObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: newThreshold
+        });
+
+        targets.forEach(target => newObserver.observe(target));
+    });
 });
 
 // skills-title animation
