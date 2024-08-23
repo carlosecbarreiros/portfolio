@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Barreiros</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="carlos-barreiros" class="header-container">
+        <div class="languages">
+            <img id="br-flag" src="imgs/brazil-flag.png" alt="br-flag">
+            <img id="us-flag" src="imgs/usa-flag.png" alt="us-flag">
+        </div>
+        <div class="carlos-barreiros">
+            <img src="imgs/personal_picture.png" alt="personal_picture">
+            <h1>Carlos Barreiros</h1>
+            <p id="occupation">Estudante de Ciência da Computação</p>
+        </div>
+        <nav>
+            <div class="first-part">
+                <section onclick="scrollToClickedSection('.container-biography')">
+                    <span id="aboutMe-button">1. Sobre mim</span>
+                </section>
+                <section onclick="scrollToClickedSection('.container-skills')">
+                    <span id="hardSkills-button">2. Habilidades técnicas</span>
+                </section>
+            </div>
+            <div class="second-part">
+                <section onclick="scrollToClickedSection('.container-projects')">
+                    <span id="projects-button">3. Projetos</span>
+                </section>
+                <section onclick="scrollToClickedSection('.container-contacts')">
+                    <span id="contacts-button">4. Contatos</span>
+                </section>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="container-biography">
+            <h1 id="biography-title">Sobre mim</h1>
+            <div id="biography-text" class="biography-text">
+                Olá! Meu nome é Carlos Eduardo Cardoso Barreiros. Tenho 19 anos e atualmente estou cursando o quarto
+                semestre de Ciência da Computação na Universidade Anhembi Morumbi. Concluí o ensino médio em 2022 no
+                Colégio Adventista da Liberdade e sempre tive uma paixão por computadores, além de uma aptidão natural
+                para assuntos relacionados. <br>
+                <br>
+                Por muito tempo, fiquei incerto sobre o que queria fazer, pois o futebol sempre foi uma prioridade desde
+                a infância. Tenho experiência nas categorias de base de clubes em São Paulo e até joguei
+                profissionalmente na Alemanha, onde passei seis meses competindo no torneio regional pelo Fv Rot-Weiß
+                Weiler, morando sozinho no apartamento do clube. Como a maioria das pessoas ao meu redor se comunicava
+                em inglês, acabei aprimorando minhas habilidades no idioma.<br>
+                <br>
+                Por outro lado, mesmo jogando futebol em 2022, não descartei a oportunidade de seguir carreira em TI,
+                pois sempre vi essa área com bons olhos. Nunca deixei os estudos de lado; sempre me dediquei e me
+                comprometi, assim como fiz na minha curta carreira no futebol. Não é à toa que, mesmo na Alemanha,
+                consegui conciliar os estudos, transferindo minha matrícula para EAD e mantendo meus cursos
+                extracurriculares nas horas vagas. Em julho de 2024, quando retornei ao Brasil, concluí que estava
+                pronto para tomar uma decisão sobre meu futuro e me dedicar 100% a uma única coisa. Decidi, então,
+                construir minha carreira no mundo da tecnologia, com o qual me identifico muito bem. <br>
+                <br>
+                Atualmente, busco minha primeira experiência profissional em TI, onde pretendo crescer
+                profissionalmente, aprender bastante e aplicar meus conhecimentos em áreas como: Programação
+                (back-end/front-end), Bibliotecas e Frameworks de Programação (jQuery, VueJS, React, Angular...), Banco
+                de Dados Relacional (SQL), Banco de Dados Não Relacional (NoSQL), UML, Requisitos de Sistema, Redes de
+                Computadores e Segurança da Informação. Entre minhas habilidades interpessoais, destacam-se o foco e a
+                organização, o bom relacionamento interpessoal, o trabalho em equipe e o forte potencial para
+                aprendizagem. Embora meu inglês já seja avançado (estudei por cinco anos no CNA e pratiquei durante
+                minha estadia na Alemanha), tenho estudado com um professor particular para me aprimorar ainda mais no
+                idioma.
+            </div>
+        </div>
+        <div class="container-skills">
+            <h1 id="skills-title">Habilidades técnicas</h1>
+            <div class="skills">
+                <div class="skill-name">Java</div>
+                <div class="skill-bar">
+                    <div id="java-bar" class="skill-per" level="intermediário" per="40%" style="max-width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar">
+                    <div id="js-bar" class="skill-per" level="avançado" per="60%" style="max-width: 60%;"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div id="html-bar" class="skill-per" level="profissional" per="80%" style="max-width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div id="css-bar" class="skill-per" level="avançado" per="60%" style="max-width: 60%;"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill-name">SQL</div>
+                <div class="skill-bar">
+                    <div id="sql-bar" class="skill-per" level="avançado" per="60%" style="max-width: 60%;"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skill-name">NoSQL</div>
+                <div class="skill-bar">
+                    <div id="nosql-bar" class="skill-per" level="intermediário" per="40%" style="max-width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div id="computerNetworks-skill" class="skill-name">Redes de Computadores</div>
+                <div class="skill-bar">
+                    <div id="cn-bar" class="skill-per" level="intermediário" per="40%" style="max-width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div id="cybersecurity-skill" class="skill-name">Cibersegurança</div>
+                <div class="skill-bar">
+                    <div id="cyber-bar" class="skill-per" level="básico" per="20%" style="max-width: 20%;"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div id="uml-skill" class="skill-name">UML e Engenharia de Requisitos</div>
+                <div class="skill-bar">
+                    <div id="uml-bar" class="skill-per" level="avançado" per="60%" style="max-width: 60%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-projects">
+            <h1 id="projects-title">Projetos</h1>
+            <div class="project">
+                <div class="card-projects" id="javabet-project">
+                    <div class="card">
+                        <img src="imgs/javebet_icon.png" alt="logo_javabet">
+                        <div class="card-wrapper">
+                            <h3 id="javaBet-title">Aplicação JavaBet</h3>
+                            <button id="javaBet-button" class="btn-viewProject" data-target="javabet">ver projeto
+                                ↓</button>
+                        </div>
+                    </div>
+                    <div id="javaBet-text" class="card-text">Este é um projeto de faculdade, em que foi desenvolvido um
+                        aplicativo de jogos
+                        online, com jogos como blackjack e caça-níquel. O aplicativo inclui registro de
+                        usuário, funcionalidade de login e uma tela de moderador com controle de usuário. Tudo foi
+                        desenvolvido em Java, inclusive o banco de dados, onde as informações são armazenadas em array
+                        de
+                        objetos, no qual os desafios eram testar o domínio do aluno com lógica e programação orientada a
+                        objetos.
+                        <br> <br>
+                        <h4>tecnologias usadas: UML e Engenharia de Requisitos</h4>
+                    </div>
+                </div>
+                <div class="media-projects" data-content="javabet">
+                    <video src="videos/Demonstração simples JavaBet.mp4" type="video/mp4" controls></video>
+                    <div class="media-description">
+                        <a id="javaBet-repository" href="https://github.com/carlosecbarreiros/java-bet"
+                            target="_blank">Repositório</a>
+                        <button id="javaBet-close" data-target="javabet" onclick="closeProject(event)">Fechar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="card-projects" id="onefootball-project">
+                    <div class="card">
+                        <img src="imgs/onefootball_icon.png" alt="logo_onefotball">
+                        <div class="card-wrapper">
+                            <h3 id="onefootball-title">Melhoria para OneFootball</h3>
+                            <button id="onefootball-button" class="btn-viewProject" data-target="onefootball">ver
+                                projeto
+                                ↓</button>
+                        </div>
+                    </div>
+                    <div id="onefootball-text" class="card-text"> Este também é um projeto de faculdade, mas de natureza
+                        mais teórica. Envolveu a modelagem de uma melhoria para o aplicativo OneFootball,
+                        especificamente a
+                        criação de uma área de comunidade no aplicativo onde os usuários pudessem interagir com o
+                        conteúdo
+                        de notícias. O foco principal de desenvolvimento desde projeto foi UML (Unified Modeling
+                        Language),
+                        para os diagramas e Engenharia de requisitos, para as implementações.
+                        <br> <br>
+                        <h4>tecnologias usadas: UML and Engenharia de Requisitos</h4>
+                    </div>
+                </div>
+                <div class="media-projects" data-content="onefootball">
+                    <img src="imgs/onefootball_interface.png" alt="onefootball_interface">
+                    <div class="media-description">
+                        <a id="onefootball-documentation"
+                            href="https://drive.google.com/drive/folders/1f6-OQUp1n3TKTZtGLwhlH8JDcHL2RMZm?hl=pt-BR"
+                            target="_blank">Documentação</a>
+                        <button id="onefootball-close" data-target="onefootball"
+                            onclick="closeProject(event)">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-contacts">
+            <h1 id="contacts-title">Contatos</h1>
+            <div class="contacts-items">
+                <ul>
+                    <li>
+                        <img src="imgs/phone_icon.png" alt="phone">
+                        <h3>+55 11 95039-4818</h3>
+                    </li>
+                    <li>
+                        <img src="imgs/email_icon.png" alt="email">
+                        <a href="mailto:cadu1117@hotmai.com" target="_blank">
+                            <h3>cadu1117@hotmail.com</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="imgs/linkedin_icon.png" alt="social_media">
+                        <a href="https://www.linkedin.com/in/carlos-eduardo-cardoso-barreiros-b86741277/"
+                            target="_blank">
+                            <h3><strong>Carlos Eduardo Cardoso Barreiros</strong></h3>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="imgs/locate_icon.png" alt="address">
+                        <h3 id="contacts-location">São Paulo, BRASIL</h3>
+                    </li>
+                </ul>
+                <form action="https://formsubmit.co/cadu1117@hotmail.com" method="POST">
+                    <label id="form-name" for="name">Nome</label>
+                    <input type="text" name="name" required>
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" required>
+                    <label id="form-message" for="message">Mensagem</label>
+                    <textarea id="form-msgSpace" name="message" placeholder="Deixe uma mensagem..."></textarea>
+                    <input type="hidden" name="_next"
+                        value="https://carlosecbarreiros.github.io/portfolio/thanksPage.html">
+                    <button id="form-button" type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <hr>
+    <footer class="footer-container">
+        <p id="footer-message">Desenvolvido por <a class="link-me" onclick="scrollToMe(); return false;">Carlos
+                Barreiros</a>. © 2024 Todos
+            Direitos Reservados.
+        </p>
+    </footer>
+
+    <script src="js/translation.js"></script>
+    <script src="js/scrollsFunctions.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/buttons.js"></script>
+</body>
+
+</html>
