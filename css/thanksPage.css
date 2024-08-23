@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: #F0ECE5;
+    font-family: Garamond;
+    background-color: #161A30;
+}
+
+.tks-page {
+    margin: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tks-page img {
+    max-width: 200px;
+    border: solid 3px #F0ECE5;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.tks-page p {
+    margin-top: 10px;
+}
