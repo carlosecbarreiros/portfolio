@@ -1,144 +1,71 @@
-// bioraphy-title animation
-document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-                observer.unobserve(entry.target);
-            }
+const brFlag = document.getElementById('br-flag');
+const usFlag = document.getElementById('us-flag');
+
+const translations = {
+    en: 'locales/en.json',
+    br: 'locales/br.json'
+};
+
+function loadLanguage(language) {
+    fetch(translations[language])
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('occupation').innerText = data.ocupation;
+            document.getElementById('aboutMe-button').innerText = data['aboutMe-button'];
+            document.getElementById('hardSkills-button').innerText = data['hardSkills-button'];
+            document.getElementById('projects-button').innerText = data['projects-button'];
+            document.getElementById('contacts-button').innerText = data['contacts-button'];
+            document.getElementById('biography-title').innerText = data['biography-title'];
+            document.getElementById('biography-text').innerHTML = data['biography-text'];
+            document.getElementById('skills-title').innerHTML = data['skills-title'];
+            document.getElementById('java-bar').setAttribute('level', data['java-bar-level']);
+            document.getElementById('js-bar').setAttribute('level', data['js-bar-level']);
+            document.getElementById('html-bar').setAttribute('level', data['html-bar-level']);
+            document.getElementById('react-bar').setAttribute('level', data['react-bar-level']);
+            document.getElementById('sql-bar').setAttribute('level', data['sql-bar-level']);
+            document.getElementById('nosql-bar').setAttribute('level', data['nosql-bar-level']);
+            document.getElementById('cn-bar').setAttribute('level', data['cn-bar-level']);
+            document.getElementById('git-bar').setAttribute('level', data['git-bar-level']);
+            document.getElementById('uml-bar').setAttribute('level', data['uml-bar-level']);
+            document.getElementById('computerNetworks-skill').innerHTML = data['computerNetworks-skill'];
+            document.getElementById('uml-skill').innerHTML = data['uml-skill'];
+            document.getElementById('projects-title').innerHTML = data['projects-title'];
+            document.getElementById('javaBet-title').innerHTML = data['javaBet-title'];
+            document.getElementById('javaBet-button').innerHTML = data['javaBet-button'];
+            document.getElementById('javaBet-text').innerHTML = data['javaBet-text'];
+            document.getElementById('javaBet-repository').innerHTML = data['javaBet-repository'];
+            document.getElementById('javaBet-close').innerHTML = data['javaBet-close'];
+            document.getElementById('onefootball-title').innerHTML = data['onefootball-title'];
+            document.getElementById('onefootball-button').innerHTML = data['onefootball-button'];
+            document.getElementById('onefootball-text').innerHTML = data['onefootball-text'];
+            document.getElementById('onefootball-documentation').innerHTML = data['onefootball-documentation'];
+            document.getElementById('onefootball-close').innerHTML = data['onefootball-close'];
+            document.getElementById('contacts-title').innerHTML = data['contacts-title'];
+            document.getElementById('contacts-location').innerHTML = data['contacts-location'];
+            document.getElementById('form-name').innerHTML = data['form-name'];
+            document.getElementById('form-message').innerHTML = data['form-message'];
+            document.getElementById('form-msgSpace').setAttribute('placeholder', data['form-msgSpace-placeholder']);
+            document.getElementById('form-button').innerHTML = data['form-button'];
+            document.getElementById('footer-message').innerHTML = data['footer-message'];
         });
-    }, {
-        threshold: 1
-    });
+}
 
-    const title = document.querySelector('#biography-title');
-    observer.observe(title);
-});
+function selectFlag(flag) {
+    localStorage.setItem('selectedLanguage', flag === 'br' ? 'pt' : 'en');
 
-document.addEventListener('DOMContentLoaded', () => {
-    function getThreshold() {
-        return window.innerWidth <= 768 ? 0.1 : 0.3; 
+    if (flag === 'br') {
+        brFlag.classList.add('flag-selected');
+        usFlag.classList.remove('flag-selected');
+        loadLanguage('br');
+    } else if (flag === 'us') {
+        usFlag.classList.add('flag-selected');
+        brFlag.classList.remove('flag-selected');
+        loadLanguage('en');
     }
+}
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: getThreshold()
-    });
+brFlag.addEventListener('click', () => selectFlag('br'));
+usFlag.addEventListener('click', () => selectFlag('us'));
 
-    const targets = document.querySelectorAll('.biography-text');
-    targets.forEach(target => observer.observe(target));
-
-    
-    window.addEventListener('resize', () => {
-        observer.disconnect(); 
-        const newThreshold = getThreshold();
-        const newObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                    newObserver.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: newThreshold
-        });
-
-        targets.forEach(target => newObserver.observe(target));
-    });
-});
-
-// skills-title animation
-document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.3
-    });
-
-    const title = document.querySelector('#skills-title');
-    observer.observe(title);
-});
-
-// skills-animation
-document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.3
-    });
-
-    const titles = document.querySelectorAll('.skills');
-    titles.forEach(title => observer.observe(title));
-});
-
-
-// skills-bar animation
-document.addEventListener("DOMContentLoaded", function () {
-    let observer = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                let skillPer = entry.target.querySelector('.skill-per');
-                skillPer.style.setProperty('--per', skillPer.getAttribute('per'));
-                skillPer.classList.add('animate');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 1 });
-
-    document.querySelectorAll('.skills').forEach(skill => {
-        observer.observe(skill);
-    });
-});
-
-// project-title animation
-document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.3
-    });
-
-    const title = document.querySelector('#projects-title');
-    observer.observe(title);
-});
-
-// projects animate
-document.addEventListener('DOMContentLoaded', () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, {
-        threshold: 0.3
-    });
-
-    const titles = document.querySelectorAll('.card-projects');
-    titles.forEach((title, index) => {
-        title.style.animationDelay = `${index * 0.1}s`;
-        observer.observe(title);
-    });
-});
+const savedLanguage = localStorage.getItem('selectedLanguage') || 'pt';
+selectFlag(savedLanguage === 'pt' ? 'br' : 'us');
