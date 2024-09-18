@@ -21,14 +21,13 @@ function loadLanguage(language) {
             document.getElementById('java-bar').setAttribute('level', data['java-bar-level']);
             document.getElementById('js-bar').setAttribute('level', data['js-bar-level']);
             document.getElementById('html-bar').setAttribute('level', data['html-bar-level']);
-            document.getElementById('css-bar').setAttribute('level', data['css-bar-level']);
+            document.getElementById('react-bar').setAttribute('level', data['react-bar-level']);
             document.getElementById('sql-bar').setAttribute('level', data['sql-bar-level']);
             document.getElementById('nosql-bar').setAttribute('level', data['nosql-bar-level']);
             document.getElementById('cn-bar').setAttribute('level', data['cn-bar-level']);
-            document.getElementById('cyber-bar').setAttribute('level', data['cyber-bar-level']);
+            document.getElementById('git-bar').setAttribute('level', data['git-bar-level']);
             document.getElementById('uml-bar').setAttribute('level', data['uml-bar-level']);
             document.getElementById('computerNetworks-skill').innerHTML = data['computerNetworks-skill'];
-            document.getElementById('cybersecurity-skill').innerHTML = data['cybersecurity-skill'];
             document.getElementById('uml-skill').innerHTML = data['uml-skill'];
             document.getElementById('projects-title').innerHTML = data['projects-title'];
             document.getElementById('javaBet-title').innerHTML = data['javaBet-title'];
