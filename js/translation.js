@@ -40,6 +40,11 @@ function loadLanguage(language) {
             document.getElementById('onefootball-text').innerHTML = data['onefootball-text'];
             document.getElementById('onefootball-documentation').innerHTML = data['onefootball-documentation'];
             document.getElementById('onefootball-close').innerHTML = data['onefootball-close'];
+            document.getElementById('crud-title').innerHTML = data['crud-title'];
+            document.getElementById('crud-button').innerHTML = data['crud-button'];
+            document.getElementById('crud-text').innerHTML = data['crud-text'];
+            document.getElementById('crud-repository').innerHTML = data['crud-repository'];
+            document.getElementById('crud-close').innerHTML = data['crud-close'];
             document.getElementById('contacts-title').innerHTML = data['contacts-title'];
             document.getElementById('contacts-location').innerHTML = data['contacts-location'];
             document.getElementById('form-name').innerHTML = data['form-name'];

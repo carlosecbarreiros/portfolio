@@ -313,7 +313,7 @@ section:hover {
     border: solid 1px #F0ECE5;
     box-shadow: 0px 0px 2px 1px #F0ECE5;
     width: 660px;
-    height: 500px;
+    height: auto;
 }
 
 .media-description {
