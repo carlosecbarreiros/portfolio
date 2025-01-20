@@ -23,11 +23,11 @@ function loadLanguage(language) {
             document.getElementById('html-bar').setAttribute('level', data['html-bar-level']);
             document.getElementById('react-bar').setAttribute('level', data['react-bar-level']);
             document.getElementById('sql-bar').setAttribute('level', data['sql-bar-level']);
-            document.getElementById('nosql-bar').setAttribute('level', data['nosql-bar-level']);
-            document.getElementById('cn-bar').setAttribute('level', data['cn-bar-level']);
+            document.getElementById('node-bar').setAttribute('level', data['node-bar-level']);
+            document.getElementById('cloud-bar').setAttribute('level', data['cloud-bar-level']);
             document.getElementById('git-bar').setAttribute('level', data['git-bar-level']);
             document.getElementById('uml-bar').setAttribute('level', data['uml-bar-level']);
-            document.getElementById('computerNetworks-skill').innerHTML = data['computerNetworks-skill'];
+            document.getElementById('cloud-skill').innerHTML = data['cloud-skill'];
             document.getElementById('uml-skill').innerHTML = data['uml-skill'];
             document.getElementById('projects-title').innerHTML = data['projects-title'];
             document.getElementById('javaBet-title').innerHTML = data['javaBet-title'];
