@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(title);
 });
 
-// skills-animation
+// skills animate
 document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -80,28 +80,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }, {
-        threshold: 0.3
+        threshold: 0.2
     });
 
-    const titles = document.querySelectorAll('.skills');
-    titles.forEach(title => observer.observe(title));
-});
-
-
-// skills-bar animation
-document.addEventListener("DOMContentLoaded", function () {
-    let observer = new IntersectionObserver(function (entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                let skillPer = entry.target.querySelector('.skill-per');
-                skillPer.style.setProperty('--per', skillPer.getAttribute('per'));
-                skillPer.classList.add('animate');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 1 });
-
-    document.querySelectorAll('.skills').forEach(skill => {
+    const skills = document.querySelectorAll('.skill-card'); 
+    skills.forEach((skill, index) => {
+        skill.style.animationDelay = `${index * 0.1}s`; // atraso em cascata
         observer.observe(skill);
     });
 });
