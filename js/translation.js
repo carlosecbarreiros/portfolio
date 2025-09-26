@@ -25,11 +25,6 @@ function loadLanguage(language) {
             document.getElementById('modeling-title').innerHTML = data['modeling-title'];
             document.getElementById('modeling-skills').innerHTML = data['modeling-skills'];
             document.getElementById('projects-title').innerHTML = data['projects-title'];
-            document.getElementById('javaBet-title').innerHTML = data['javaBet-title'];
-            document.getElementById('javaBet-button').innerHTML = data['javaBet-button'];
-            document.getElementById('javaBet-text').innerHTML = data['javaBet-text'];
-            document.getElementById('javaBet-repository').innerHTML = data['javaBet-repository'];
-            document.getElementById('javaBet-close').innerHTML = data['javaBet-close'];
             document.getElementById('onefootball-title').innerHTML = data['onefootball-title'];
             document.getElementById('onefootball-button').innerHTML = data['onefootball-button'];
             document.getElementById('onefootball-text').innerHTML = data['onefootball-text'];
