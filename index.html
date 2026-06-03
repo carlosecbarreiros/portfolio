@@ -1,217 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR" data-lang="br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Barreiros</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carlos Barreiros — Engenheiro de Dados & Administrador de Banco de Dados">
+  <title>Carlos Barreiros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <header id="carlos-barreiros" class="header-container">
-        <div class="languages">
-            <img id="br-flag" src="assets/imgs/brazil-flag.png" alt="br-flag">
-            <img id="us-flag" src="assets/imgs/usa-flag.png" alt="us-flag">
-        </div>
-        <div class="carlos-barreiros">
-            <img src="assets/imgs/personal_picture.png" alt="personal_picture">
-            <h1>Carlos Barreiros</h1>
-            <p id="occupation">Administrador de Banco de Dados/Engenheiro de Dados</p>
-        </div>
-        <nav>
-            <div class="first-part">
-                <section onclick="scrollToClickedSection('.container-biography')">
-                    <span id="aboutMe-button">1. Sobre mim</span>
-                </section>
-                <section onclick="scrollToClickedSection('.container-skills')">
-                    <span id="hardSkills-button">2. Habilidades técnicas</span>
-                </section>
-            </div>
-            <div class="second-part">
-                <section onclick="scrollToClickedSection('.container-projects')">
-                    <span id="projects-button">3. Projetos</span>
-                </section>
-                <section onclick="scrollToClickedSection('.container-contacts')">
-                    <span id="contacts-button">4. Contatos</span>
-                </section>
-            </div>
-        </nav>
-    </header>
-    <main class="container">
-        <div class="container-biography">
-            <h1 id="biography-title">Sobre mim</h1>
-            <div id="biography-text" class="biography-text">
-                Olá! Meu nome é Carlos Eduardo Cardoso Barreiros, tenho 20 anos e sou estudante de Ciência da Computação
-                na Universidade Anhembi Morumbi (conclusão prevista para dez/2026). Atualmente, atuo como Administrador
-                de Banco de Dados Júnior na Sintel Brasil, trabalhando com ambientes produtivos em SQL Server e
-                PostgreSQL (on-premise e AWS Aurora).
 
-                No dia a dia, atuo com análise e otimização de performance, automação de rotinas, gestão de backups e
-                restores e monitoramento de sistemas de missão crítica. Também participo da modelagem de dados e do
-                desenvolvimento de soluções em banco, sempre buscando eficiência, confiabilidade e escalabilidade.
-
-                Tenho como principal diferencial a busca constante por automação e melhoria contínua, desenvolvendo
-                soluções que reduzem erros manuais, aumentam a eficiência operacional e geram impacto direto no
-                ambiente. Além disso, colaboro com equipes de desenvolvimento na construção e otimização de procedures,
-                functions e queries, garantindo uma integração eficiente entre aplicações e banco de dados.
-
-                Antes da tecnologia, vivi uma experiência como jogador de futebol profissional na Alemanha, onde
-                desenvolvi disciplina, resiliência, trabalho em equipe e adaptação a ambientes desafiadores, além de
-                consolidar meu inglês.
-
-                Tenho grande interesse em Engenharia de Dados e Inteligência Artificial aplicada a dados, áreas nas
-                quais venho me aprofundando continuamente. Busco evoluir na construção de soluções de dados escaláveis,
-                desde a modelagem e processamento até a disponibilização para análise, utilizando tecnologias modernas e
-                boas práticas de engenharia. Acredito no potencial dos dados para gerar impacto real, promovendo
-                eficiência, escalabilidade e melhores tomadas de decisão nas organizações. <br> <br>
-            </div>
+  <!-- ── Navigation ─────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">CB</a>
+      <ul class="nav-links">
+        <li><a href="#about"    data-i18n="nav_about">Sobre mim</a></li>
+        <li><a href="#skills"   data-i18n="nav_skills">Habilidades</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+        <li><a href="#contact"  data-i18n="nav_contact">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="br">
+            <img src="assets/imgs/brazil-flag.png" alt="PT-BR">
+          </button>
+          <button class="lang-btn" data-lang="en">
+            <img src="assets/imgs/usa-flag.png" alt="EN">
+          </button>
         </div>
-        <div class="container-skills">
-            <h1 id="skills-title">Habilidades técnicas</h1>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3 id="database-title">Bancos de Dados</h3>
-                    <p>SQL Server · PostgreSQL · MySQL · Amazon Aurora · Oracle</p>
-                </div>
-                <div class="skill-card">
-                    <h3 id="dev-title">Desenvolvimento</h3>
-                    <p>SQL · Python · PowerShell</p>
-                </div>
-                <div class="skill-card">
-                    <h3 id="infra-title">Cloud</h3>
-                    <p>AWS · Microsoft Azure</p>
-                </div>
-                <div class="skill-card">
-                    <h3 id="data-title">Dados & Engenharia</h3>
-                    <p id="data-skills">Modelagem de Dados · ETL · Performance Tuning </p>
-                </div>
-                <div class="skill-card">
-                    <h3 id="sys-title">Sistemas Operacionais</h3>
-                    <p>Windows · Linux</p>
-                </div>
-            </div>
-        </div>
-        <div class="container-projects">
-            <h1 id="projects-title">Projetos</h1>
-            <div class="project">
-                <div class="card-projects" id="onefootball-project">
-                    <div class="card">
-                        <img src="assets/imgs/onefootball_icon.png" alt="logo_onefotball">
-                        <div class="card-wrapper">
-                            <h3 id="onefootball-title">Melhoria para OneFootball</h3>
-                            <button id="onefootball-button" class="btn-viewProject" data-target="onefootball">ver
-                                projeto
-                                ↓</button>
-                        </div>
-                    </div>
-                    <div id="onefootball-text" class="card-text"> Este também é um projeto de faculdade, mas de natureza
-                        mais teórica. Envolveu a modelagem de uma melhoria para o aplicativo OneFootball,
-                        especificamente a
-                        criação de uma área de comunidade no aplicativo onde os usuários pudessem interagir com o
-                        conteúdo
-                        de notícias. O foco principal de desenvolvimento deste projeto foi a Modelagem de Dados, com
-                        utilização de UML (Unified Modeling
-                        Language),
-                        para os diagramas e Engenharia de requisitos, para as implementações.
-                        <br> <br>
-                        <h4>tecnologias usadas: UML and Engenharia de Requisitos</h4>
-                    </div>
-                </div>
-                <div class="media-projects" data-content="onefootball">
-                    <img src="assets/imgs/onefootball_interface.png" alt="onefootball_interface">
-                    <div class="media-description">
-                        <a id="onefootball-documentation"
-                            href="https://drive.google.com/drive/folders/1f6-OQUp1n3TKTZtGLwhlH8JDcHL2RMZm?hl=pt-BR"
-                            target="_blank">Documentação</a>
-                        <button id="onefootball-close" data-target="onefootball"
-                            onclick="closeProject(event)">Fechar</button>
-                    </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="card-projects" id="crud-project">
-                    <div class="card">
-                        <img src="assets/imgs/crud_icon.png" alt="logo_crud">
-                        <div class="card-wrapper">
-                            <h3 id="crud-title">Aplicação CRUD</h3>
-                            <button id="crud-button" class="btn-viewProject" data-target="crud">ver projeto
-                                ↓</button>
-                        </div>
-                    </div>
-                    <div id="crud-text" class="card-text">Aplicação web completa que simula um
-                        sistema de cadastro e gerenciamento de usuários, desenvolvido como desafio pessoal para
-                        aprofundar conhecimentos em desenvolvimento full-stack. O sistema permite que os usuários façam
-                        seu cadastro e login, visualizem suas informações e excluam suas contas. Para moderadores, há um
-                        painel com funcionalidades de controle completo sobre os usuários, incluindo cadastro, edição e
-                        exclusão.
-                        <br> <br>
-                        <h4>tecnologias usadas: React, CSS Tailwind, Node.js, Express e MySQL</h4>
-                    </div>
-                </div>
-                <div class="media-projects" data-content="crud">
-                    <video src="assets/videos/crud-project.mp4" type="video/mp4" controls></video>
-                    <div class="media-description">
-                        <a id="crud-repository" href="https://github.com/carlosecbarreiros/crud-project"
-                            target="_blank">Repositório</a>
-                        <button id="crud-close" data-target="crud" onclick="closeProject(event)">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-contacts">
-            <h1 id="contacts-title">Contatos</h1>
-            <div class="contacts-items">
-                <ul>
-                    <li>
-                        <img src="assets/imgs/phone_icon.png" alt="phone">
-                        <h3>+55 11 95039-4818</h3>
-                    </li>
-                    <li>
-                        <img src="assets/imgs/email_icon.png" alt="email">
-                        <a href="mailto:cadu1117@hotmai.com" target="_blank">
-                            <h3>cadu1117@hotmail.com</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <img src="assets/imgs/linkedin_icon.png" alt="social_media">
-                        <a href="https://www.linkedin.com/in/carlos-eduardo-cardoso-barreiros-b86741277/"
-                            target="_blank">
-                            <h3><strong>Carlos Eduardo Cardoso Barreiros</strong></h3>
-                        </a>
-                    </li>
-                    <li>
-                        <img src="assets/imgs/locate_icon.png" alt="address">
-                        <h3 id="contacts-location">São Paulo, BRASIL</h3>
-                    </li>
-                </ul>
-                <form action="https://formsubmit.co/cadu1117@hotmail.com" method="POST">
-                    <label id="form-name" for="name">Nome</label>
-                    <input type="text" name="name" required>
-                    <label for="email">E-Mail</label>
-                    <input type="email" name="email" required>
-                    <label id="form-message" for="message">Mensagem</label>
-                    <textarea id="form-msgSpace" name="message" placeholder="Deixe uma mensagem..."></textarea>
-                    <input type="hidden" name="_next"
-                        value="https://carlosecbarreiros.github.io/portfolio/thanksPage.html">
-                    <button id="form-button" type="submit">Enviar</button>
-                </form>
-            </div>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <ul>
+        <li><a href="#about"    data-i18n="nav_about">Sobre mim</a></li>
+        <li><a href="#skills"   data-i18n="nav_skills">Habilidades</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+        <li><a href="#contact"  data-i18n="nav_contact">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- ── Hero ───────────────────────────────────────── -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow--1"></div>
+      <div class="hero-glow hero-glow--2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-avatar reveal">
+        <div class="hero-avatar__ring"></div>
+        <img src="assets/imgs/personal_picture.png" alt="Carlos Barreiros" class="hero-avatar__img">
+      </div>
+      <h1 class="hero-name reveal delay-1">Carlos Barreiros</h1>
+      <p class="hero-role reveal delay-2">
+        <span class="typewriter" id="heroRole"></span>
+      </p>
+      <p class="hero-tagline reveal delay-3" data-i18n="hero_tagline">
+        Transformando dados em decisões de impacto
+      </p>
+      <div class="hero-cta reveal delay-4">
+        <a href="#projects" class="btn btn--primary" data-i18n="hero_btn_projects">Ver Projetos</a>
+        <a href="#contact"  class="btn btn--outline"  data-i18n="hero_btn_contact">Entrar em Contato</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    </div>
+  </section>
+
+  <!-- ── About ──────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="about_tag">Sobre mim</span>
+        <h2 data-i18n="about_title">Quem sou eu</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p data-i18n="about_p1">Olá! Meu nome é Carlos Eduardo Cardoso Barreiros, tenho 20 anos e sou estudante de Ciência da Computação na Universidade Anhembi Morumbi (conclusão prevista para dez/2026). Atualmente, atuo como Administrador de Banco de Dados Júnior na Sintel Brasil, trabalhando com ambientes produtivos em SQL Server e PostgreSQL (on-premise &amp; AWS Aurora).</p>
+          <p data-i18n="about_p2">No dia a dia, atuo com análise e otimização de performance, automação de rotinas, gestão de backups e restore e monitoramento de sistemas de missão crítica. Também participo da modelagem de dados e do desenvolvimento de soluções em banco, sempre buscando eficiência, confiabilidade e escalabilidade.</p>
+          <p data-i18n="about_p3">Antes da tecnologia, vivi uma experiência como jogador de futebol profissional na Alemanha, onde desenvolvi disciplina, resiliência, trabalho em equipe e adaptação a ambientes desafiadores, além de consolidar meu inglês.</p>
+          <p data-i18n="about_p4">Tenho grande interesse em Engenharia de Dados e Inteligência Artificial aplicada a dados — áreas onde busco evoluir continuamente, construindo soluções escaláveis com tecnologias modernas e boas práticas de engenharia.</p>
         </div>
-    </main>
-    <hr>
-    <footer class="footer-container">
-        <p id="footer-message">Desenvolvido por <a class="link-me" onclick="scrollToMe(); return false;">Carlos
-                Barreiros</a>. © 2024 Todos
-            Direitos Reservados.
+        <div class="about-stats reveal delay-1">
+          <div class="stat-card">
+            <span class="stat-number">2+</span>
+            <span class="stat-label" data-i18n="about_stat1">Anos de experiência</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label" data-i18n="about_stat2">Projetos realizados</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label" data-i18n="about_stat3">Tecnologias</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">🇩🇪</span>
+            <span class="stat-label" data-i18n="about_stat4">Ex-atleta profissional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ─────────────────────────────────────── -->
+  <section id="skills" class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="skills_tag">Habilidades</span>
+        <h2 data-i18n="skills_title">Stack técnica</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🗄️</div>
+          <h3 data-i18n="skill_db">Bancos de Dados</h3>
+          <div class="tags">
+            <span class="tag">SQL Server</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Amazon Aurora</span>
+            <span class="tag">Oracle</span>
+          </div>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-card__icon">💻</div>
+          <h3 data-i18n="skill_dev">Desenvolvimento</h3>
+          <div class="tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Python</span>
+            <span class="tag">PowerShell</span>
+          </div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-card__icon">☁️</div>
+          <h3 data-i18n="skill_cloud">Cloud</h3>
+          <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Microsoft Azure</span>
+          </div>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <div class="skill-card__icon">📊</div>
+          <h3 data-i18n="skill_data">Dados &amp; Engenharia</h3>
+          <div class="tags">
+            <span class="tag">Modelagem de Dados</span>
+            <span class="tag">ETL</span>
+            <span class="tag">Performance Tuning</span>
+          </div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <div class="skill-card__icon">🖥️</div>
+          <h3 data-i18n="skill_os">Sistemas Operacionais</h3>
+          <div class="tags">
+            <span class="tag">Windows Server</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ───────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="projects_tag">Projetos</span>
+        <h2 data-i18n="projects_title">O que construí</h2>
+      </div>
+      <div class="projects-list">
+
+        <!-- OneFootball -->
+        <article class="project-card reveal">
+          <div class="project-thumb"
+               style="background-image: url('assets/imgs/onefootball_interface.png'); background-position: center 12%">
+            <div class="project-thumb__overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <img src="assets/imgs/onefootball_icon.png" alt="OneFootball" class="project-icon">
+              <div>
+                <span class="project-badge" data-i18n="proj_academic">Projeto Acadêmico</span>
+                <h3 data-i18n="proj1_title">Melhoria para OneFootball</h3>
+              </div>
+            </div>
+            <p data-i18n="proj1_desc">Modelagem de uma melhoria para o aplicativo OneFootball, especificamente a criação de uma área de comunidade onde os usuários poderiam interagir com o conteúdo de notícias. O foco foi o desenvolvimento de diagramas UML e Engenharia de Requisitos para análise e implementação.</p>
+            <div class="tags">
+              <span class="tag tag--accent">UML</span>
+              <span class="tag tag--accent">Engenharia de Requisitos</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://drive.google.com/drive/folders/1o1TjjVpPK32p1hUlWBlIFLOD5mNmETjw"
+                 target="_blank" class="btn btn--primary btn--sm" data-i18n="proj_see_docs">Ver Documentação</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CRUD -->
+        <article class="project-card reveal delay-1">
+          <div class="project-thumb project-thumb--crud">
+            <video id="crudThumbVid"
+                   src="assets/videos/crud-project.mp4"
+                   muted preload="metadata"
+                   class="project-thumb__vid"></video>
+            <div class="project-thumb__overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-header">
+              <img src="assets/imgs/crud_icon.png" alt="CRUD" class="project-icon">
+              <div>
+                <span class="project-badge project-badge--personal" data-i18n="proj_personal">Projeto Pessoal</span>
+                <h3 data-i18n="proj2_title">Aplicação CRUD</h3>
+              </div>
+            </div>
+            <p data-i18n="proj2_desc">Aplicação web completa que simula um sistema de cadastro e gerenciamento de usuários, desenvolvida como desafio full-stack. O sistema permite cadastro, login, visualização de perfil e exclusão de conta. Para moderadores, há um painel de controle completo sobre os usuários.</p>
+            <div class="tags">
+              <span class="tag tag--accent">React</span>
+              <span class="tag tag--accent">Tailwind CSS</span>
+              <span class="tag tag--accent">Node.js</span>
+              <span class="tag tag--accent">Express</span>
+              <span class="tag tag--accent">MySQL</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn--primary btn--sm js-open-demo" data-i18n="proj_watch_demo">Assistir Demo</button>
+              <a href="https://github.com/carlosecbarreiros/crud-project"
+                 target="_blank" class="btn btn--outline btn--sm" data-i18n="proj_see_repo">Ver Repositório</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ────────────────────────────────────── -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" data-i18n="contact_tag">Contato</span>
+        <h2 data-i18n="contact_title">Vamos conversar</h2>
+        <p class="section-subtitle" data-i18n="contact_sub">
+          Estou disponível para oportunidades, colaborações e conversas sobre dados e tecnologia.
         </p>
-    </footer>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a href="tel:+5511950394818" class="contact-item">
+            <div class="contact-item__icon">
+              <img src="assets/imgs/phone_icon.png" alt="Telefone">
+            </div>
+            <div>
+              <span class="contact-item__label" data-i18n="contact_phone_label">Telefone</span>
+              <span class="contact-item__value">+55 11 95039-4818</span>
+            </div>
+          </a>
+          <a href="mailto:cadu1117@hotmail.com" class="contact-item">
+            <div class="contact-item__icon">
+              <img src="assets/imgs/email_icon.png" alt="E-mail">
+            </div>
+            <div>
+              <span class="contact-item__label">E-mail</span>
+              <span class="contact-item__value">cadu1117@hotmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/carlos-eduardo-cardoso-barreiros-b86741277/"
+             target="_blank" class="contact-item">
+            <div class="contact-item__icon">
+              <img src="assets/imgs/linkedin_icon.png" alt="LinkedIn" class="icon--color">
+            </div>
+            <div>
+              <span class="contact-item__label">LinkedIn</span>
+              <span class="contact-item__value">Carlos Eduardo Cardoso Barreiros</span>
+            </div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <img src="assets/imgs/locate_icon.png" alt="Localização">
+            </div>
+            <div>
+              <span class="contact-item__label" data-i18n="contact_loc_label">Localização</span>
+              <span class="contact-item__value">São Paulo, Brasil</span>
+            </div>
+          </div>
+        </div>
 
-    <script src="js/translation.js"></script>
-    <script src="js/scrollsFunctions.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/buttons.js"></script>
+        <form class="contact-form reveal delay-1"
+              action="https://formsubmit.co/cadu1117@hotmail.com" method="POST">
+          <input type="hidden" name="_next"    value="thanksPage.html">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-group">
+            <label for="name" data-i18n="form_name">Nome</label>
+            <input type="text"  id="name"    name="name"    required placeholder="Carlos Barreiros">
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="form_email">E-Mail</label>
+            <input type="email" id="email"   name="email"   required placeholder="carlos@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="form_msg">Mensagem</label>
+            <textarea id="message" name="message" rows="5" required
+                      data-i18n-placeholder="form_msg_placeholder"
+                      placeholder="Sua mensagem..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full" data-i18n="form_send">
+            Enviar Mensagem
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer">Desenvolvido por <strong>Carlos Barreiros</strong> &copy; 2025 Todos os Direitos Reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Video Demo Modal -->
+  <div class="vid-modal" id="vidModal" role="dialog" aria-modal="true">
+    <div class="vid-modal__backdrop" id="vidModalBackdrop"></div>
+    <div class="vid-modal__content">
+      <button class="vid-modal__close" id="vidModalClose" aria-label="Fechar">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+      <video src="assets/videos/crud-project.mp4" controls muted id="modalVideo"></video>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>
