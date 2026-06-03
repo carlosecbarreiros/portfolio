@@ -824,6 +824,10 @@ ul { list-style: none; }
 @media (max-width: 640px) {
   .hero-cta { flex-direction: column; align-items: center; width: 100%; }
   .hero-cta .btn { width: 100%; max-width: 280px; }
+
+  .hero-scroll { bottom: 16px; }
+  .scroll-mouse { width: 16px; height: 26px; padding-top: 4px; }
+  .scroll-wheel { width: 2px; height: 5px; }
 }
 
 @media (max-width: 480px) {
